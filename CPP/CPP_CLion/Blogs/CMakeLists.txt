@@ -3,4 +3,4 @@ project(CPP_CLion)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Blog1 BlogStart.cpp)
+add_executable(Blog1 BlogPart1.cpp)
