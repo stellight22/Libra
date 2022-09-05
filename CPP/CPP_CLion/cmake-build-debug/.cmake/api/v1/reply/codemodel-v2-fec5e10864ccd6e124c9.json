@@ -1,0 +1,213 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CPP_CLion",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BasicClass::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BasicClass-Debug-c8dfe90061b41e072d57.json",
+					"name" : "BasicClass",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CLion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CLion-Debug-87918ec45afca947197f.json",
+					"name" : "CLion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ClassesPractice::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ClassesPractice-Debug-20759b49a4b1ebac5f36.json",
+					"name" : "ClassesPractice",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CommonErrorsArrays::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CommonErrorsArrays-Debug-52dfe63299a0744b9f6e.json",
+					"name" : "CommonErrorsArrays",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CommonErrorsStructs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CommonErrorsStructs-Debug-134a2314e143cd5e9202.json",
+					"name" : "CommonErrorsStructs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FunctionsArrays::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FunctionsArrays-Debug-fbd071bc6e62eefa7987.json",
+					"name" : "FunctionsArrays",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MotivationClasses::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MotivationClasses-Debug-a028e6a2a5f145fa955c.json",
+					"name" : "MotivationClasses",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MotivationStructure::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MotivationStructure-Debug-e6b38a8a7128b5423b5a.json",
+					"name" : "MotivationStructure",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NoArray::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NoArray-Debug-4056934fa8d949774dcd.json",
+					"name" : "NoArray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPClasses::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPClasses-Debug-b82bcc136971fb2057c4.json",
+					"name" : "OOPClasses",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Search::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Search-Debug-2eaa210f2a98bdbc797d.json",
+					"name" : "Search",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SimpleArray::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SimpleArray-Debug-81f1d80b0af6f40404c5.json",
+					"name" : "SimpleArray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SimpleArrayVer2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SimpleArrayVer2-Debug-60d8caa787090e1061ff.json",
+					"name" : "SimpleArrayVer2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Sorting::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Sorting-Debug-ccee1d23f6795dc2c753.json",
+					"name" : "Sorting",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StringValidation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StringValidation-Debug-24fb92472998bbe568d5.json",
+					"name" : "StringValidation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StructurePractice::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StructurePractice-Debug-2033a0f6c43e9eefae49.json",
+					"name" : "StructurePractice",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Structures::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Structures-Debug-1526d69bab63035b662e.json",
+					"name" : "Structures",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StudentRegStart::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StudentRegStart-Debug-e3aae318bcb74faba766.json",
+					"name" : "StudentRegStart",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug",
+		"source" : "/Users/ahyeon/Github/Libra/CPP/CPP_CLion"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

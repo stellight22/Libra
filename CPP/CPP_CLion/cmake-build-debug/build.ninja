@@ -99,6 +99,502 @@ build NoArray: CXX_EXECUTABLE_LINKER__NoArray_Debug CMakeFiles/NoArray.dir/Modul
   TARGET_FILE = NoArray
   TARGET_PDB = NoArray.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target SimpleArray
+
+
+#############################################
+# Order-only phony target for SimpleArray
+
+build cmake_object_order_depends_target_SimpleArray: phony || CMakeFiles/SimpleArray.dir
+
+build CMakeFiles/SimpleArray.dir/Module1/SimpleArray.cpp.o: CXX_COMPILER__SimpleArray_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module1/SimpleArray.cpp || cmake_object_order_depends_target_SimpleArray
+  DEP_FILE = CMakeFiles/SimpleArray.dir/Module1/SimpleArray.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/SimpleArray.dir
+  OBJECT_FILE_DIR = CMakeFiles/SimpleArray.dir/Module1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SimpleArray
+
+
+#############################################
+# Link the executable SimpleArray
+
+build SimpleArray: CXX_EXECUTABLE_LINKER__SimpleArray_Debug CMakeFiles/SimpleArray.dir/Module1/SimpleArray.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/SimpleArray.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = SimpleArray
+  TARGET_PDB = SimpleArray.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target SimpleArrayVer2
+
+
+#############################################
+# Order-only phony target for SimpleArrayVer2
+
+build cmake_object_order_depends_target_SimpleArrayVer2: phony || CMakeFiles/SimpleArrayVer2.dir
+
+build CMakeFiles/SimpleArrayVer2.dir/Module1/SimpleArrayVer2.cpp.o: CXX_COMPILER__SimpleArrayVer2_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module1/SimpleArrayVer2.cpp || cmake_object_order_depends_target_SimpleArrayVer2
+  DEP_FILE = CMakeFiles/SimpleArrayVer2.dir/Module1/SimpleArrayVer2.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/SimpleArrayVer2.dir
+  OBJECT_FILE_DIR = CMakeFiles/SimpleArrayVer2.dir/Module1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target SimpleArrayVer2
+
+
+#############################################
+# Link the executable SimpleArrayVer2
+
+build SimpleArrayVer2: CXX_EXECUTABLE_LINKER__SimpleArrayVer2_Debug CMakeFiles/SimpleArrayVer2.dir/Module1/SimpleArrayVer2.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/SimpleArrayVer2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = SimpleArrayVer2
+  TARGET_PDB = SimpleArrayVer2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target FunctionsArrays
+
+
+#############################################
+# Order-only phony target for FunctionsArrays
+
+build cmake_object_order_depends_target_FunctionsArrays: phony || CMakeFiles/FunctionsArrays.dir
+
+build CMakeFiles/FunctionsArrays.dir/Module1/FunctionsArrays.cpp.o: CXX_COMPILER__FunctionsArrays_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module1/FunctionsArrays.cpp || cmake_object_order_depends_target_FunctionsArrays
+  DEP_FILE = CMakeFiles/FunctionsArrays.dir/Module1/FunctionsArrays.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/FunctionsArrays.dir
+  OBJECT_FILE_DIR = CMakeFiles/FunctionsArrays.dir/Module1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target FunctionsArrays
+
+
+#############################################
+# Link the executable FunctionsArrays
+
+build FunctionsArrays: CXX_EXECUTABLE_LINKER__FunctionsArrays_Debug CMakeFiles/FunctionsArrays.dir/Module1/FunctionsArrays.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/FunctionsArrays.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = FunctionsArrays
+  TARGET_PDB = FunctionsArrays.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Search
+
+
+#############################################
+# Order-only phony target for Search
+
+build cmake_object_order_depends_target_Search: phony || CMakeFiles/Search.dir
+
+build CMakeFiles/Search.dir/Module1/Search.cpp.o: CXX_COMPILER__Search_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module1/Search.cpp || cmake_object_order_depends_target_Search
+  DEP_FILE = CMakeFiles/Search.dir/Module1/Search.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/Search.dir
+  OBJECT_FILE_DIR = CMakeFiles/Search.dir/Module1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Search
+
+
+#############################################
+# Link the executable Search
+
+build Search: CXX_EXECUTABLE_LINKER__Search_Debug CMakeFiles/Search.dir/Module1/Search.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Search.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Search
+  TARGET_PDB = Search.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Sorting
+
+
+#############################################
+# Order-only phony target for Sorting
+
+build cmake_object_order_depends_target_Sorting: phony || CMakeFiles/Sorting.dir
+
+build CMakeFiles/Sorting.dir/Module1/Sorting.cpp.o: CXX_COMPILER__Sorting_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module1/Sorting.cpp || cmake_object_order_depends_target_Sorting
+  DEP_FILE = CMakeFiles/Sorting.dir/Module1/Sorting.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/Sorting.dir
+  OBJECT_FILE_DIR = CMakeFiles/Sorting.dir/Module1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Sorting
+
+
+#############################################
+# Link the executable Sorting
+
+build Sorting: CXX_EXECUTABLE_LINKER__Sorting_Debug CMakeFiles/Sorting.dir/Module1/Sorting.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Sorting.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Sorting
+  TARGET_PDB = Sorting.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target CommonErrorsArrays
+
+
+#############################################
+# Order-only phony target for CommonErrorsArrays
+
+build cmake_object_order_depends_target_CommonErrorsArrays: phony || CMakeFiles/CommonErrorsArrays.dir
+
+build CMakeFiles/CommonErrorsArrays.dir/Module1/CommonErrorsArrays.cpp.o: CXX_COMPILER__CommonErrorsArrays_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module1/CommonErrorsArrays.cpp || cmake_object_order_depends_target_CommonErrorsArrays
+  DEP_FILE = CMakeFiles/CommonErrorsArrays.dir/Module1/CommonErrorsArrays.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/CommonErrorsArrays.dir
+  OBJECT_FILE_DIR = CMakeFiles/CommonErrorsArrays.dir/Module1
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CommonErrorsArrays
+
+
+#############################################
+# Link the executable CommonErrorsArrays
+
+build CommonErrorsArrays: CXX_EXECUTABLE_LINKER__CommonErrorsArrays_Debug CMakeFiles/CommonErrorsArrays.dir/Module1/CommonErrorsArrays.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/CommonErrorsArrays.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = CommonErrorsArrays
+  TARGET_PDB = CommonErrorsArrays.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target MotivationStructure
+
+
+#############################################
+# Order-only phony target for MotivationStructure
+
+build cmake_object_order_depends_target_MotivationStructure: phony || CMakeFiles/MotivationStructure.dir
+
+build CMakeFiles/MotivationStructure.dir/Module2/MotivationStructure.cpp.o: CXX_COMPILER__MotivationStructure_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module2/MotivationStructure.cpp || cmake_object_order_depends_target_MotivationStructure
+  DEP_FILE = CMakeFiles/MotivationStructure.dir/Module2/MotivationStructure.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/MotivationStructure.dir
+  OBJECT_FILE_DIR = CMakeFiles/MotivationStructure.dir/Module2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target MotivationStructure
+
+
+#############################################
+# Link the executable MotivationStructure
+
+build MotivationStructure: CXX_EXECUTABLE_LINKER__MotivationStructure_Debug CMakeFiles/MotivationStructure.dir/Module2/MotivationStructure.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/MotivationStructure.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = MotivationStructure
+  TARGET_PDB = MotivationStructure.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Structures
+
+
+#############################################
+# Order-only phony target for Structures
+
+build cmake_object_order_depends_target_Structures: phony || CMakeFiles/Structures.dir
+
+build CMakeFiles/Structures.dir/Module2/Structures.cpp.o: CXX_COMPILER__Structures_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module2/Structures.cpp || cmake_object_order_depends_target_Structures
+  DEP_FILE = CMakeFiles/Structures.dir/Module2/Structures.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/Structures.dir
+  OBJECT_FILE_DIR = CMakeFiles/Structures.dir/Module2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Structures
+
+
+#############################################
+# Link the executable Structures
+
+build Structures: CXX_EXECUTABLE_LINKER__Structures_Debug CMakeFiles/Structures.dir/Module2/Structures.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/Structures.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Structures
+  TARGET_PDB = Structures.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target StructurePractice
+
+
+#############################################
+# Order-only phony target for StructurePractice
+
+build cmake_object_order_depends_target_StructurePractice: phony || CMakeFiles/StructurePractice.dir
+
+build CMakeFiles/StructurePractice.dir/Module2/StructurePractice.cpp.o: CXX_COMPILER__StructurePractice_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module2/StructurePractice.cpp || cmake_object_order_depends_target_StructurePractice
+  DEP_FILE = CMakeFiles/StructurePractice.dir/Module2/StructurePractice.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/StructurePractice.dir
+  OBJECT_FILE_DIR = CMakeFiles/StructurePractice.dir/Module2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target StructurePractice
+
+
+#############################################
+# Link the executable StructurePractice
+
+build StructurePractice: CXX_EXECUTABLE_LINKER__StructurePractice_Debug CMakeFiles/StructurePractice.dir/Module2/StructurePractice.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/StructurePractice.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = StructurePractice
+  TARGET_PDB = StructurePractice.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target CommonErrorsStructs
+
+
+#############################################
+# Order-only phony target for CommonErrorsStructs
+
+build cmake_object_order_depends_target_CommonErrorsStructs: phony || CMakeFiles/CommonErrorsStructs.dir
+
+build CMakeFiles/CommonErrorsStructs.dir/Module2/CommonErrorsStructs.cpp.o: CXX_COMPILER__CommonErrorsStructs_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module2/CommonErrorsStructs.cpp || cmake_object_order_depends_target_CommonErrorsStructs
+  DEP_FILE = CMakeFiles/CommonErrorsStructs.dir/Module2/CommonErrorsStructs.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/CommonErrorsStructs.dir
+  OBJECT_FILE_DIR = CMakeFiles/CommonErrorsStructs.dir/Module2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CommonErrorsStructs
+
+
+#############################################
+# Link the executable CommonErrorsStructs
+
+build CommonErrorsStructs: CXX_EXECUTABLE_LINKER__CommonErrorsStructs_Debug CMakeFiles/CommonErrorsStructs.dir/Module2/CommonErrorsStructs.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/CommonErrorsStructs.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = CommonErrorsStructs
+  TARGET_PDB = CommonErrorsStructs.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target MotivationClasses
+
+
+#############################################
+# Order-only phony target for MotivationClasses
+
+build cmake_object_order_depends_target_MotivationClasses: phony || CMakeFiles/MotivationClasses.dir
+
+build CMakeFiles/MotivationClasses.dir/Module2/MotivationClasses.cpp.o: CXX_COMPILER__MotivationClasses_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module2/MotivationClasses.cpp || cmake_object_order_depends_target_MotivationClasses
+  DEP_FILE = CMakeFiles/MotivationClasses.dir/Module2/MotivationClasses.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/MotivationClasses.dir
+  OBJECT_FILE_DIR = CMakeFiles/MotivationClasses.dir/Module2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target MotivationClasses
+
+
+#############################################
+# Link the executable MotivationClasses
+
+build MotivationClasses: CXX_EXECUTABLE_LINKER__MotivationClasses_Debug CMakeFiles/MotivationClasses.dir/Module2/MotivationClasses.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/MotivationClasses.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = MotivationClasses
+  TARGET_PDB = MotivationClasses.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target BasicClass
+
+
+#############################################
+# Order-only phony target for BasicClass
+
+build cmake_object_order_depends_target_BasicClass: phony || CMakeFiles/BasicClass.dir
+
+build CMakeFiles/BasicClass.dir/Module2/BasicClass.cpp.o: CXX_COMPILER__BasicClass_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module2/BasicClass.cpp || cmake_object_order_depends_target_BasicClass
+  DEP_FILE = CMakeFiles/BasicClass.dir/Module2/BasicClass.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/BasicClass.dir
+  OBJECT_FILE_DIR = CMakeFiles/BasicClass.dir/Module2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BasicClass
+
+
+#############################################
+# Link the executable BasicClass
+
+build BasicClass: CXX_EXECUTABLE_LINKER__BasicClass_Debug CMakeFiles/BasicClass.dir/Module2/BasicClass.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/BasicClass.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = BasicClass
+  TARGET_PDB = BasicClass.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ClassesPractice
+
+
+#############################################
+# Order-only phony target for ClassesPractice
+
+build cmake_object_order_depends_target_ClassesPractice: phony || CMakeFiles/ClassesPractice.dir
+
+build CMakeFiles/ClassesPractice.dir/Module2/ClassesPractice.cpp.o: CXX_COMPILER__ClassesPractice_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module2/ClassesPractice.cpp || cmake_object_order_depends_target_ClassesPractice
+  DEP_FILE = CMakeFiles/ClassesPractice.dir/Module2/ClassesPractice.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/ClassesPractice.dir
+  OBJECT_FILE_DIR = CMakeFiles/ClassesPractice.dir/Module2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ClassesPractice
+
+
+#############################################
+# Link the executable ClassesPractice
+
+build ClassesPractice: CXX_EXECUTABLE_LINKER__ClassesPractice_Debug CMakeFiles/ClassesPractice.dir/Module2/ClassesPractice.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/ClassesPractice.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ClassesPractice
+  TARGET_PDB = ClassesPractice.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target OOPClasses
+
+
+#############################################
+# Order-only phony target for OOPClasses
+
+build cmake_object_order_depends_target_OOPClasses: phony || CMakeFiles/OOPClasses.dir
+
+build CMakeFiles/OOPClasses.dir/Module2/OOPClasses.cpp.o: CXX_COMPILER__OOPClasses_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module2/OOPClasses.cpp || cmake_object_order_depends_target_OOPClasses
+  DEP_FILE = CMakeFiles/OOPClasses.dir/Module2/OOPClasses.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/OOPClasses.dir
+  OBJECT_FILE_DIR = CMakeFiles/OOPClasses.dir/Module2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target OOPClasses
+
+
+#############################################
+# Link the executable OOPClasses
+
+build OOPClasses: CXX_EXECUTABLE_LINKER__OOPClasses_Debug CMakeFiles/OOPClasses.dir/Module2/OOPClasses.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/OOPClasses.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = OOPClasses
+  TARGET_PDB = OOPClasses.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target StudentRegStart
+
+
+#############################################
+# Order-only phony target for StudentRegStart
+
+build cmake_object_order_depends_target_StudentRegStart: phony || CMakeFiles/StudentRegStart.dir
+
+build CMakeFiles/StudentRegStart.dir/Module2/StudentRegStart.cpp.o: CXX_COMPILER__StudentRegStart_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module2/StudentRegStart.cpp || cmake_object_order_depends_target_StudentRegStart
+  DEP_FILE = CMakeFiles/StudentRegStart.dir/Module2/StudentRegStart.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/StudentRegStart.dir
+  OBJECT_FILE_DIR = CMakeFiles/StudentRegStart.dir/Module2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target StudentRegStart
+
+
+#############################################
+# Link the executable StudentRegStart
+
+build StudentRegStart: CXX_EXECUTABLE_LINKER__StudentRegStart_Debug CMakeFiles/StudentRegStart.dir/Module2/StudentRegStart.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/StudentRegStart.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = StudentRegStart
+  TARGET_PDB = StudentRegStart.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target StringValidation
+
+
+#############################################
+# Order-only phony target for StringValidation
+
+build cmake_object_order_depends_target_StringValidation: phony || CMakeFiles/StringValidation.dir
+
+build CMakeFiles/StringValidation.dir/Module2/StringValidation.cpp.o: CXX_COMPILER__StringValidation_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module2/StringValidation.cpp || cmake_object_order_depends_target_StringValidation
+  DEP_FILE = CMakeFiles/StringValidation.dir/Module2/StringValidation.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/StringValidation.dir
+  OBJECT_FILE_DIR = CMakeFiles/StringValidation.dir/Module2
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target StringValidation
+
+
+#############################################
+# Link the executable StringValidation
+
+build StringValidation: CXX_EXECUTABLE_LINKER__StringValidation_Debug CMakeFiles/StringValidation.dir/Module2/StringValidation.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/StringValidation.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = StringValidation
+  TARGET_PDB = StringValidation.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -133,7 +629,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug
 
-build all: phony CLion NoArray
+build all: phony CLion NoArray SimpleArray SimpleArrayVer2 FunctionsArrays Search Sorting CommonErrorsArrays MotivationStructure Structures StructurePractice CommonErrorsStructs MotivationClasses BasicClass ClassesPractice OOPClasses StudentRegStart StringValidation
 
 # =============================================================================
 # Built-in targets
