@@ -11,7 +11,7 @@
  * */
 
 #include <iostream>
-#include <string.h>
+#include <string>
 
 // students - you need to put program header here
 using namespace std;
@@ -83,6 +83,19 @@ private:
 };
 
 ////////////////////////////////////////////////////
+void booty()
+{
+    int a;
+    string sexy;
+
+    cout << "Enter Something";
+    cin >> a;
+
+    cout << "Enter sexy";
+    getline(cin,sexy);
+
+}
+
 // sets up Areas
 void initAreas(Area Areas[]);
 
@@ -131,9 +144,7 @@ void initAreas(Area areas[]) {
     //init Com Sci
     areas[0].setName("Com Sci");
     //add a post to the Com Sci area
-    Post p{"I love programming",
-           "Programming is so much fun.",
-           "Tom"};
+    Post p{"I love programming","Programming is so much fun.","Tom"};
     areas[0].AddPost(p);
     //set description for areas[0]
     areas[0].setDesc("This Area talks about computers.");
@@ -148,9 +159,7 @@ void initAreas(Area areas[]) {
     //init Current Events
     areas[1].setName("Current Events");
     //add a post to the Current Events area
-    Post p3{"Picnic Saturday",
-            "Join us at the park for a picnic on Saturday",
-            "Sue"};
+    Post p3{"Picnic Saturday","Join us at the park for a picnic on Saturday","Sue"};
     areas[1].AddPost(p3);
     //set description for areas[1]
     areas[1].setDesc("This Area talks about the latest community news.");
@@ -248,35 +257,7 @@ void implementAction(Area areas[], string strCh)
     //user selects C
     else if ((strCh == "C") || (strCh == "c"))
     {
-        int areaNum;
-        string titleA, userN, text;
-        cout << "Please enter a blog area index.";
-        cin >> areaNum;
-        /*if ((areaNum >=0) && (areaNum <=4)) //in case the user inputs the wrong area number
-        {
-            cout << "Please enter in the title...";
-        }
-        else
-        {
-            cout << "Invalid area index.";
-        }
-         */
-        cout << "Please enter in the title..."<< endl;
-        getline(cin, titleA);
-        cout << titleA << endl;
-        //cout <<"Title must contain at least 1 non white space character and at most 20 non white space characters " <<endl;
-
-
-
-        /*out << "Please enter in the user" << endl;
-        cout << "User must contain at least 1 non white space character and at most 10 non white space characters" << endl;
-        cin >> userN;
-
-        cout << "Please enter in the text..."<< endl;
-        cout << "Text must contain at least 1 non white space character and at most 500 non white space characters"<< endl;
-        cin >> text;
-         */
-
+        booty();
     }
         //user selected Q
     else if ((strCh == "Q") || (strCh == "q")) {
@@ -352,6 +333,7 @@ int Area::AddPost(Post p) {
         //invalid no room for new post
         return -1;
 }
+
 
 ///////////////////////////////////////
 const std::string WHITESPACE = " \n\r\t\f\v";
