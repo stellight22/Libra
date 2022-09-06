@@ -1,0 +1,285 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CPP_CLion",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BasicClass::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BasicClass-Debug-2f71df3f42d2799d5bf8.json",
+					"name" : "BasicClass",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Bubby::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Bubby-Debug-15b760c8cb6d6827045a.json",
+					"name" : "Bubby",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CLion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CLion-Debug-87918ec45afca947197f.json",
+					"name" : "CLion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ClassConstructors::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ClassConstructors-Debug-293fa4c0b37deb6606ac.json",
+					"name" : "ClassConstructors",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ClassMemberVariable::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ClassMemberVariable-Debug-5926f41ef695d65efa15.json",
+					"name" : "ClassMemberVariable",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ClassesPractice::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ClassesPractice-Debug-0069966baefc3d580542.json",
+					"name" : "ClassesPractice",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CommonErrorsArrays::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CommonErrorsArrays-Debug-77613eecac92fe8da107.json",
+					"name" : "CommonErrorsArrays",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CommonErrorsStructs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CommonErrorsStructs-Debug-1b9c6a1cf9e0587ba9fe.json",
+					"name" : "CommonErrorsStructs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ConstParam::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ConstParam-Debug-0723c67f107645bd777a.json",
+					"name" : "ConstParam",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Constructors::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Constructors-Debug-d74ab2bd68f6f575ad68.json",
+					"name" : "Constructors",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FunctionsArrays::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FunctionsArrays-Debug-ad4dd25a061b3073c6f7.json",
+					"name" : "FunctionsArrays",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "InlineFunc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-InlineFunc-Debug-6aa71867c30633389b7d.json",
+					"name" : "InlineFunc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MotivationClasses::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MotivationClasses-Debug-52a89bbef542520c5aea.json",
+					"name" : "MotivationClasses",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MotivationStructure::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MotivationStructure-Debug-2d6385620838bdf8898a.json",
+					"name" : "MotivationStructure",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "NoArray::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NoArray-Debug-caf1ec14ae5b2fde59c4.json",
+					"name" : "NoArray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OOPClasses::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OOPClasses-Debug-6b9b8079ff96893fcec3.json",
+					"name" : "OOPClasses",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Search::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Search-Debug-4b0c582dbe2437c67632.json",
+					"name" : "Search",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SimpleArray::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SimpleArray-Debug-2e2c5710971cae36070f.json",
+					"name" : "SimpleArray",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SimpleArrayVer2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SimpleArrayVer2-Debug-dc148eb6d9c137d7fc87.json",
+					"name" : "SimpleArrayVer2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Sorting::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Sorting-Debug-1117b4632a805a85c4e5.json",
+					"name" : "Sorting",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StaticMembers::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StaticMembers-Debug-742ece064adf49b04540.json",
+					"name" : "StaticMembers",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StringValidation::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StringValidation-Debug-d5ae16f696497ce3a810.json",
+					"name" : "StringValidation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StructurePractice::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StructurePractice-Debug-71308c1042ba3c9d5583.json",
+					"name" : "StructurePractice",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Structures::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Structures-Debug-89662f7c1c93f5a81941.json",
+					"name" : "Structures",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StudentRegStart::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StudentRegStart-Debug-6513239044b7aabf987f.json",
+					"name" : "StudentRegStart",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Vector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Vector-Debug-3b312670c0b947a013c9.json",
+					"name" : "Vector",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug",
+		"source" : "/Users/ahyeon/Github/Libra/CPP/CPP_CLion"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

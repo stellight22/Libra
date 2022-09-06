@@ -4,6 +4,8 @@ project(CPP_CLion)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(CLion main.cpp)
+
+
 add_executable(NoArray Module1/NoArray.cpp)
 add_executable(SimpleArray Module1/SimpleArray.cpp)
 add_executable(SimpleArrayVer2 Module1/SimpleArrayVer2.cpp)
@@ -22,3 +24,17 @@ add_executable(ClassesPractice Module2/ClassesPractice.cpp)
 add_executable(OOPClasses Module2/OOPClasses.cpp)
 add_executable(StudentRegStart Module2/StudentRegStart.cpp)
 add_executable(StringValidation Module2/StringValidation.cpp)
+
+add_executable(ClassConstructors Module3/ClassConstructors.cpp)
+add_executable(ClassMemberVariable Module3/ClassMemberVariable.cpp)
+add_executable(ConstParam Module3/ConstParam.cpp)
+add_executable(InlineFunc Module3/InlineFunc.cpp)
+add_executable(Constructors Module3/Constructors.cpp)
+add_executable(StaticMembers Module3/StaticMembers.cpp)
+add_executable(Vector Module3/Vector.cpp)
+add_executable(Bubby Module3/Bubby.cpp)
+
+
+
+
+

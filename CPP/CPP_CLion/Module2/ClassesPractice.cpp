@@ -4,12 +4,12 @@
 #include <iostream>
 using namespace std;
 
-Class Student
+class Student
 {
 public:
     string first;
     string last;
-    int age
+    int age;
     void printDeets();
 
 };

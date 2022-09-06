@@ -46,8 +46,8 @@ cmake_ninja_workdir = /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Blogs/cmake-build
 
 build cmake_object_order_depends_target_Blog1: phony || CMakeFiles/Blog1.dir
 
-build CMakeFiles/Blog1.dir/BlogStart.cpp.o: CXX_COMPILER__Blog1_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Blogs/BlogStart.cpp || cmake_object_order_depends_target_Blog1
-  DEP_FILE = CMakeFiles/Blog1.dir/BlogStart.cpp.o.d
+build CMakeFiles/Blog1.dir/BlogPart1.cpp.o: CXX_COMPILER__Blog1_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Blogs/BlogPart1.cpp || cmake_object_order_depends_target_Blog1
+  DEP_FILE = CMakeFiles/Blog1.dir/BlogPart1.cpp.o.d
   FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++14
   OBJECT_DIR = CMakeFiles/Blog1.dir
   OBJECT_FILE_DIR = CMakeFiles/Blog1.dir
@@ -60,7 +60,7 @@ build CMakeFiles/Blog1.dir/BlogStart.cpp.o: CXX_COMPILER__Blog1_Debug /Users/ahy
 #############################################
 # Link the executable Blog1
 
-build Blog1: CXX_EXECUTABLE_LINKER__Blog1_Debug CMakeFiles/Blog1.dir/BlogStart.cpp.o
+build Blog1: CXX_EXECUTABLE_LINKER__Blog1_Debug CMakeFiles/Blog1.dir/BlogPart1.cpp.o
   FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
   OBJECT_DIR = CMakeFiles/Blog1.dir
   POST_BUILD = :

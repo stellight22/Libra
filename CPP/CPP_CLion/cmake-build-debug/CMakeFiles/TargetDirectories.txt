@@ -16,5 +16,13 @@
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/OOPClasses.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/StudentRegStart.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/StringValidation.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/ClassConstructors.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/ClassMemberVariable.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/ConstParam.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/InlineFunc.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/Constructors.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/StaticMembers.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/Vector.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/Bubby.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
