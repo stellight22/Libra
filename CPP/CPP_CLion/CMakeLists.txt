@@ -33,6 +33,8 @@ add_executable(Constructors Module3/Constructors.cpp)
 add_executable(StaticMembers Module3/StaticMembers.cpp)
 add_executable(Vector Module3/Vector.cpp)
 add_executable(Bubby Module3/Bubby.cpp)
+add_executable(StudentReg2 Module3/StudentReg2.cpp)
+
 
 
 

@@ -24,5 +24,6 @@
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/StaticMembers.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/Vector.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/Bubby.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/StudentReg2.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -843,6 +843,37 @@ build Bubby: CXX_EXECUTABLE_LINKER__Bubby_Debug CMakeFiles/Bubby.dir/Module3/Bub
   TARGET_FILE = Bubby
   TARGET_PDB = Bubby.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target StudentReg2
+
+
+#############################################
+# Order-only phony target for StudentReg2
+
+build cmake_object_order_depends_target_StudentReg2: phony || CMakeFiles/StudentReg2.dir
+
+build CMakeFiles/StudentReg2.dir/Module3/StudentReg2.cpp.o: CXX_COMPILER__StudentReg2_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module3/StudentReg2.cpp || cmake_object_order_depends_target_StudentReg2
+  DEP_FILE = CMakeFiles/StudentReg2.dir/Module3/StudentReg2.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/StudentReg2.dir
+  OBJECT_FILE_DIR = CMakeFiles/StudentReg2.dir/Module3
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target StudentReg2
+
+
+#############################################
+# Link the executable StudentReg2
+
+build StudentReg2: CXX_EXECUTABLE_LINKER__StudentReg2_Debug CMakeFiles/StudentReg2.dir/Module3/StudentReg2.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/StudentReg2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = StudentReg2
+  TARGET_PDB = StudentReg2.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -877,7 +908,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug
 
-build all: phony CLion NoArray SimpleArray SimpleArrayVer2 FunctionsArrays Search Sorting CommonErrorsArrays MotivationStructure Structures StructurePractice CommonErrorsStructs MotivationClasses BasicClass ClassesPractice OOPClasses StudentRegStart StringValidation ClassConstructors ClassMemberVariable ConstParam InlineFunc Constructors StaticMembers Vector Bubby
+build all: phony CLion NoArray SimpleArray SimpleArrayVer2 FunctionsArrays Search Sorting CommonErrorsArrays MotivationStructure Structures StructurePractice CommonErrorsStructs MotivationClasses BasicClass ClassesPractice OOPClasses StudentRegStart StringValidation ClassConstructors ClassMemberVariable ConstParam InlineFunc Constructors StaticMembers Vector Bubby StudentReg2
 
 # =============================================================================
 # Built-in targets

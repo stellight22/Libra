@@ -1,14 +1,14 @@
 # ninja log v5
-34	717	1662419806868859997	CMakeFiles/Vector.dir/Module3/Vector.cpp.o	7a660a2f4c9c1dbe
-0	740	1662253895778253708	CMakeFiles/Structures.dir/Module2/Structures.cpp.o	5c05219160cc5471
 1113	1278	1662201613999126616	NoA	ff1cfb424f6919ac
+0	740	1662253895778253708	CMakeFiles/Structures.dir/Module2/Structures.cpp.o	5c05219160cc5471
+34	717	1662419806868859997	CMakeFiles/Vector.dir/Module3/Vector.cpp.o	7a660a2f4c9c1dbe
 0	757	1662258823705546158	CMakeFiles/MotivationClasses.dir/Module2/MotivationClasses.cpp.o	76733538b4238666
-711	791	1662419806945837429	StaticMembers	9f2a16ec236f577a
 596	669	1662259201069570610	BasicClass	d3e174b301286924
 0	865	1662201460021057043	CMakeFiles/CLion.dir/main.cpp.o	7b1158a6dc9a6e76
-635	707	1662246510870630920	SimpleArrayVer2	7c9815f1e0e44cd9
-10	850	1662408123104984186	CMakeFiles/ClassMemberVariable.dir/Module3/ClassMemberVariable.cpp.o	7b495dad2c9a0e58
+711	791	1662419806945837429	StaticMembers	9f2a16ec236f577a
 633	715	1662256181394103583	CommonErrorsStructs	262ff86d677b0bfc
+10	850	1662408123104984186	CMakeFiles/ClassMemberVariable.dir/Module3/ClassMemberVariable.cpp.o	7b495dad2c9a0e58
+635	707	1662246510870630920	SimpleArrayVer2	7c9815f1e0e44cd9
 740	819	1662253895860235732	Structures	dabdd0f2ffe039ec
 24	710	1662419806861787448	CMakeFiles/StaticMembers.dir/Module3/StaticMembers.cpp.o	a326dcd9f604ff67
 1	753	1662408378536798826	CMakeFiles/Constructors.dir/Module3/Constructors.cpp.o	a9b1fc4992b0526b
@@ -20,7 +20,7 @@
 720	811	1662260514961757201	OOPClasses	48250010c0a52abb
 0	678	1662253664693296810	CMakeFiles/MotivationStructure.dir/Module2/MotivationStructure.cpp.o	43333b5fb1ea11e8
 1	650	1662246311145647219	CMakeFiles/SimpleArray.dir/Module1/SimpleArray.cpp.o	a29f737ec9a9a6cc
-0	152	1662434776828913557	build.ninja	5debce6a637fbe0f
+0	152	1662445161095815148	build.ninja	5debce6a637fbe0f
 0	26	0	clean	3c8e6cc385ee00ba
 780	853	1662262851035975762	StudentRegStart	86bae78e3e04c42c
 585	661	1662249069944960907	FunctionsArrays	d90ec25218cfe036
@@ -52,8 +52,10 @@
 0	989	1662201671705976192	CMakeFiles/NoArray.dir/Module1/NoArray.cpp.o	55f3147b518d8069
 753	823	1662408378608939621	Constructors	ec11abd7e9c66adc
 2	850	1662408123103908328	CMakeFiles/CommonErrorsArrays.dir/Module1/CommonErrorsArrays.cpp.o	9d146f9d8d98dbbd
-623	675	1662408178346608599	ClassesPractice	39abb0ca2325e3df
 1016	1117	1662201197249307262	Module2	a9fe7e52d758dcc4
-0	1016	1662201197143956859	CMakeFiles/Module2.dir/Module2/Piggy.cpp.o	7b18400f2e4056d
-3	202	1662408139684473105	StringValidation	7c8cd7e264771b70
+623	675	1662408178346608599	ClassesPractice	39abb0ca2325e3df
 2	916	1662410578784043115	CMakeFiles/ClassConstructors.dir/Module3/ClassConstructors.cpp.o	e99c4a1afec9752a
+3	202	1662408139684473105	StringValidation	7c8cd7e264771b70
+0	1016	1662201197143956859	CMakeFiles/Module2.dir/Module2/Piggy.cpp.o	7b18400f2e4056d
+0	868	1662445175070603061	CMakeFiles/StudentReg2.dir/Module3/StudentReg2.cpp.o	8f3ba714aeca6f51
+868	1020	1662445175228072058	StudentReg2	e488c405975611a0
