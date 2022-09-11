@@ -3,12 +3,12 @@
 //////////////////////////////////////////////////////
 /*
  * Name: Ahyeon Cho
- * Date: 09/03/2022
+ * Date: 09/08/2022
  * Section: COP3330-11
- * Assignment: Module 2 Assignment
- * Due Date: 09/04/2022
+ * Assignment: Module 3 Assignment
+ * Due Date: 09/11/2022
  * About this project: This project is aimed to apply and practice concepts of arrays, strings, structures
- *         and classes in C++.
+ *         and classes in C++. An update from the last project by changing struct Post to a class.
  * Assumptions: Assumes correct user input.
  * All work below was performed by Ahyeon Cho
  * */
@@ -35,19 +35,53 @@ const int MAX_NUM_POSTS = 10;
 //Whitespace constants
 const std::string WHITESPACE = " \n\r\t\f\v";
 
-//////////////////////////////////////////////////////
-//Structures
-//////////////////////////////////////////////////////
-struct Post
-{
-    string Title; //title
-    string Text; //text
-    string User; //User
-};
+
 
 //////////////////////////////////////////////////////
 //Classes
 //////////////////////////////////////////////////////
+class Post
+{
+    public:
+        //constructor
+        Post(){ };
+        Post(string t, string txt, string u ){Title = t; Text = txt; User = u;};
+
+        //accessor and mutator functions
+        void setTitle(string t)
+        {
+            Title = t;
+        }
+        string getTitle()
+        {
+            return Title;
+        }
+        void setText(string txt)
+        {
+            Text = txt;
+        }
+        string getText()
+        {
+            return Text;
+        }
+        void setUser(string u)
+        {
+            User = u;
+        }
+        string getUser()
+        {
+            return User;
+        }
+
+    private:
+        string Title; //title
+        string Text; //text
+        string User; //User
+
+};
+
+
+
 class Area
 {
 public:
@@ -85,6 +119,13 @@ public:
     // add post
     int AddPost(Post p);
 
+    void EditPost(int postId, string title, string text, string user)
+    {
+        Posts[postId].setTitle(title);
+        Posts[postId].setText(text);
+        Posts[postId].setUser(user);
+    }
+
     // get post
     bool getPost(int i, Post &p)
     {
@@ -105,6 +146,8 @@ private:
     int indxLastPost = -1; //array index of last post in arary
     string description;
 };
+
+
 
 //////////////////////////////////////////////////////
 //Functions
@@ -166,7 +209,8 @@ void displayMenu()
     cout << " A  - Display Blog areas" << endl;
     cout << " B  - Display all posts for a blog" << endl;
     cout << " C  - Add a post to an area" << endl;
-    cout << " D  - Display a post for a blog" << endl; //add option C
+    cout << " D  - Display a post for a blog" << endl; 
+    cout << " E - Edit a post for a blog" << endl;
     cout << " Q  - Quit" << endl;
 }
 
@@ -197,9 +241,9 @@ void DisplayPostsABlog(Area a)
         bool found = a.getPost(i, p);
         if (found) {
             cout << "Post Index : " << i << endl;
-            cout << "Title : " << p.Title << endl;
-            cout << "By : " << p.User << endl;
-            cout << "Text : " << p.Text << endl;
+            cout << "Title : " << p.getTitle() << endl;
+            cout << "By : " << p.getUser() << endl;
+            cout << "Text : " << p.getText() << endl;
             cout << "******************" << endl;
         }
     }
@@ -218,9 +262,9 @@ void DisplayPost(Area area[] , int areaID, int postID)
     {
         cout << endl;
         cout << "Post Index:" << postID << endl;
-        cout << "Title:" << p.Title << endl;
-        cout << "By:" << p.User << endl;
-        cout << "Text:" << p.Text << endl;
+        cout << "Title:" << p.getTitle() << endl;
+        cout << "By:" << p.getUser() << endl;
+        cout << "Text:" << p.getText() << endl;
         cout << "******************" << endl;
     }
 }
@@ -302,7 +346,7 @@ string getValidUsername()
     //prompt and read in Blog Area Index
     cout << "Please enter in a Username" << endl;
     cout << "Username must contain at least 1 non white space character and at most 10 non white space characters" << endl;
-    cin.ignore();
+    //cin.ignore();
     getline(cin, username);
     username = trim(username);
 
@@ -331,7 +375,7 @@ string getValidText()
     //prompt and read in Blog Area Index
     cout << "Please enter in the text ..." << endl;
     cout << "Text must contain at least 1 non white space character and at most 500 non white space characters" << endl;
-    cin.ignore();
+    //cin.ignore();
     getline(cin, text);
     text = trim(text);
 
@@ -393,9 +437,9 @@ void implementAction(Area areas[], string strCh)
         int areaID = getValidBlogArea();
 
         Post temp;
-        temp.Title = getValidPostTitle();
-        temp.User = getValidUsername();
-        temp.Text = getValidText();
+        temp.setTitle(getValidPostTitle());
+        temp.setUser(getValidUsername());
+        temp.setText(getValidText());
 
         areas[areaID].AddPost(temp);
         cout << "Post successfully added." << endl;
@@ -411,6 +455,26 @@ void implementAction(Area areas[], string strCh)
         DisplayPost(areas, areaID, postId);
 
     }
+    //If User selects option E: to edit EXISTING post
+    else if ((strCh == "E") || (strCh == "e"))
+    {
+        cout << "Edit a post for a blog..." << endl;
+
+        int areaID = getValidBlogArea();
+
+        int postId = getValidPostIndex(areas, areaID);
+
+        DisplayPost(areas, areaID, postId);
+
+        Post temp;
+        temp.setTitle(getValidPostTitle());
+        temp.setUser(getValidUsername());
+        temp.setText(getValidText());
+
+        areas[areaID].EditPost(postId, temp.getTitle(), temp.getText(), temp.getUser());
+        //areas[areaID].EditPost(postId, getValidPostTitle(), getValidUsername(), getValidText());
+        cout << "Post successfully editted." << endl;   
+    }
         //If user selected Q
     else if ((strCh == "Q") || (strCh == "q"))
     {
@@ -425,9 +489,6 @@ void implementAction(Area areas[], string strCh)
 }
 
 
-
-
-
 // sets up areas
 void initAreas(Area areas[]) {
     //init Com Sci
@@ -440,9 +501,9 @@ void initAreas(Area areas[]) {
 
     //add another post to the Com Sci area
     Post p2;
-    p2.Title = "C++ versus Python";
-    p2.Text = "I like C++ more than Python.";
-    p2.User = "Sally";
+    p2.setTitle("C++ versus Python");
+    p2.setText("I like C++ more than Python.");
+    p2.setUser("Sally");
     areas[0].AddPost(p2);
 
     //init Current Events
@@ -460,15 +521,15 @@ void initAreas(Area areas[]) {
     areas[2].setDesc("This Area is made for the food enthusiasts.");
     //first post for Foodie area
     Post p5;
-    p5.Title = "Chocolate Shortage";
-    p5.Text = "Chocolate is in danger of extinction.";
-    p5.User = "Choco-lover";
+    p5.setTitle("Chocolate Shortage");
+    p5.setText("Chocolate is in danger of extinction.");
+    p5.setUser("Choco-lover");
     areas[2].AddPost(p5);
     //second post for Foodie area, which is areas[2]
     Post p6;
-    p6.Title = "Paleo Diet";
-    p6.Text = "Eat lots of fish.";
-    p6.User = "Sushi-lover";
+    p6.setTitle("Paleo Diet");
+    p6.setText("Eat lots of fish.");
+    p6.setUser("Sushi-lover");
     areas[2].AddPost(p6);
 
 
@@ -478,15 +539,15 @@ void initAreas(Area areas[]) {
     areas[3].setDesc("This Area is made for the travel enthusiasts.");
     //first post for travel area
     Post p7;
-    p7.Title = "COVID is OVER";
-    p7.Text = "Travel without masks!";
-    p7.User = "iloveparis";
+    p7.setTitle("COVID is OVER");
+    p7.setText("Travel without masks!");
+    p7.setUser("iloveparis");
     areas[3].AddPost(p7);
     //second post for travel area, which is areas[3]
     Post p8;
-    p8.Title = "Portuguese Summer";
-    p8.Text = "Lots of group travel deals inside.";
-    p8.User = "miamor";
+    p8.setTitle("Portuguese Summer");
+    p8.setText("Lots of group travel deals inside.");
+    p8.setUser("miamor");
     areas[3].AddPost(p8);
 
     //init friends
@@ -495,15 +556,15 @@ void initAreas(Area areas[]) {
     areas[4].setDesc("This Area is made for the fans of the show Friends.");
     //first post for travel area
     Post p9;
-    p9.Title = "Ross is Back";
-    p9.Text = "PIVOT!!";
-    p9.User = "Monica";
+    p9.setTitle("Ross is Back");
+    p9.setText("PIVOT!!");
+    p9.setUser("Monica");
     areas[4].AddPost(p9);
     //second post for Foodie area, which is areas[2]
     Post p10;
-    p10.Title = "Joey is hitched!";
-    p10.Text = "Just kidding. How you doin'?";
-    p10.User = "pizzaLover";
+    p10.setTitle("Joey is hitched!");
+    p10.setText("Just kidding. How you doin'?");
+    p10.setUser("pizzaLover");
     areas[4].AddPost(p10);
 
 }

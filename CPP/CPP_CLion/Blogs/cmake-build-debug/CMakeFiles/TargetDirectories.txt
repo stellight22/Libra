@@ -1,3 +1,4 @@
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Blogs/cmake-build-debug/CMakeFiles/Blog1.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/Blogs/cmake-build-debug/CMakeFiles/Blog2.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Blogs/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Blogs/cmake-build-debug/CMakeFiles/rebuild_cache.dir

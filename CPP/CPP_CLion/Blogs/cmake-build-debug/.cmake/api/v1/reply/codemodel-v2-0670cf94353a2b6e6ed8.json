@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "CPP_CLion",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -41,6 +43,13 @@
 					"id" : "Blog1::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Blog1-Debug-a1a3aed745cf19af02de.json",
 					"name" : "Blog1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Blog2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Blog2-Debug-67a28bd7c4bca6e3021e.json",
+					"name" : "Blog2",
 					"projectIndex" : 0
 				}
 			]

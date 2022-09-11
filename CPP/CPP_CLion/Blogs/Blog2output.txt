@@ -1,0 +1,308 @@
+cho@linprog5.cs.fsu.edu:~/COP3330/Assignment3>g++ -std=c++11 BlogPart2.cpp 
+cho@linprog5.cs.fsu.edu:~/COP3330/Assignment3>a.out
+Welcome to my Blog 
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+A
+Display blog areas...
+
+Display Blog areas...
+Area Index : 0
+Area Name : Comp Sci
+Area Description : This Area talks about computers.
+******************
+Area Index : 1
+Area Name : Current Events
+Area Description : This Area talks about the latest community news.
+******************
+Area Index : 2
+Area Name : Foodie Updates
+Area Description : This Area is made for the food enthusiasts.
+******************
+Area Index : 3
+Area Name : Travel Updates
+Area Description : This Area is made for the travel enthusiasts.
+******************
+Area Index : 4
+Area Name : Friends Updates
+Area Description : This Area is made for the fans of the show Friends.
+******************
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+0
+0 is not a valid option.
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+B
+Display all posts for a blog...
+Please enter in a Blog Area Index
+0
+
+Posts for Comp Sci
+Post Index : 0
+Title : I love programming
+By : Tom
+Text : Programming is so much fun.
+******************
+Post Index : 1
+Title : C++ versus Python
+By : Sally
+Text : I like C++ more than Python.
+******************
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+1
+
+Posts for Current Events
+Post Index : 0
+Title : Picnic Saturday
+By : Sue
+Text : Join us at the park for a picnic on Saturday
+******************
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+2
+
+Posts for Foodie Updates
+Post Index : 0
+Title : Chocolate Shortage
+By : Choco-lover
+Text : Chocolate is in danger of extinction.
+******************
+Post Index : 1
+Title : Paleo Diet
+By : Sushi-lover
+Text : Eat lots of fish.
+******************
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+3
+
+Posts for Travel Updates
+Post Index : 0
+Title : COVID is OVER
+By : iloveparis
+Text : Travel without masks!
+******************
+Post Index : 1
+Title : Portuguese Summer
+By : miamor
+Text : Lots of group travel deals inside.
+******************
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+4
+
+Posts for Friends Updates
+Post Index : 0
+Title : Ross is Back
+By : Monica
+Text : PIVOT!!
+******************
+Post Index : 1
+Title : Joey is hitched!
+By : pizzaLover
+Text : Just kidding. How you doin'?
+******************
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+c
+Add a post to a blog...
+Please enter in a Blog Area Index
+4
+Please enter in a Post Title
+Title must contain at least 1 non white space character and at most 20 non white space characters
+test
+Please enter in a Username
+Username must contain at least 1 non white space character and at most 10 non white space characters
+test
+Please enter in the text ...
+Text must contain at least 1 non white space character and at most 500 non white space characters
+test
+Post successfully added.
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+4
+
+Posts for Friends Updates
+Post Index : 0
+Title : Ross is Back
+By : Monica
+Text : PIVOT!!
+******************
+Post Index : 1
+Title : Joey is hitched!
+By : pizzaLover
+Text : Just kidding. How you doin'?
+******************
+Post Index : 2
+Title : test
+By : test
+Text : test
+******************
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+e
+Edit a post for a blog...
+Please enter in a Blog Area Index
+4
+Please enter in a Post Index
+2
+
+Post Index:2
+Title:test
+By:test
+Text:test
+******************
+Please enter in a Post Title
+Title must contain at least 1 non white space character and at most 20 non white space characters
+Where I want to go
+Please enter in a Username
+Username must contain at least 1 non white space character and at most 10 non white space characters
+Jill
+Please enter in the text ...
+Text must contain at least 1 non white space character and at most 500 non white space characters
+Paris
+Post successfully editted.
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+d
+Display a post for a blog...
+Please enter in a Blog Area Index
+4
+Please enter in a Post Index
+2
+
+Post Index:2
+Title:Where I want to go
+By:Jill
+Text:Paris
+******************
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+h
+h is not a valid option.
+
+Please select from the following options...
+ A  - Display Blog areas
+ B  - Display all posts for a blog
+ C  - Add a post to an area
+ D  - Display a post for a blog
+ E - Edit a post for a blog
+ Q  - Quit
+
+What would you like to do?
+q
+Bye...
+
