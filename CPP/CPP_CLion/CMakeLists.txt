@@ -35,6 +35,19 @@ add_executable(Vector Module3/Vector.cpp)
 add_executable(Bubby Module3/Bubby.cpp)
 add_executable(StudentReg2 Module3/StudentReg2.cpp)
 
+add_executable(OperatorOverloading Module4/operatorOverloading.cpp)
+add_executable(OperatorOverloading1 Module4/operatorOverloading1.cpp)
+add_executable(NotMemberFunctions Module4/NotMemberFunctions.cpp)
+add_executable(MemberFunctions Module4/MemberFunctions.cpp)
+add_executable(FriendsExample Module4/FriendsExample.cpp)
+add_executable(FriendClass Module4/FriendClass.cpp)
+add_executable(FriendsExample2 Module4/FriendsExample2.cpp)
+add_executable(PrePostfixExample Module4/PrePostfixExample.cpp)
+add_executable(ArrayExample Module4/ArrayExample.cpp)
+
+
+
+
 
 
 

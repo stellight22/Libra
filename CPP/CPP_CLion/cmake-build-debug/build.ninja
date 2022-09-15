@@ -874,6 +874,285 @@ build StudentReg2: CXX_EXECUTABLE_LINKER__StudentReg2_Debug CMakeFiles/StudentRe
   TARGET_FILE = StudentReg2
   TARGET_PDB = StudentReg2.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target OperatorOverloading
+
+
+#############################################
+# Order-only phony target for OperatorOverloading
+
+build cmake_object_order_depends_target_OperatorOverloading: phony || CMakeFiles/OperatorOverloading.dir
+
+build CMakeFiles/OperatorOverloading.dir/Module4/operatorOverloading.cpp.o: CXX_COMPILER__OperatorOverloading_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module4/operatorOverloading.cpp || cmake_object_order_depends_target_OperatorOverloading
+  DEP_FILE = CMakeFiles/OperatorOverloading.dir/Module4/operatorOverloading.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/OperatorOverloading.dir
+  OBJECT_FILE_DIR = CMakeFiles/OperatorOverloading.dir/Module4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target OperatorOverloading
+
+
+#############################################
+# Link the executable OperatorOverloading
+
+build OperatorOverloading: CXX_EXECUTABLE_LINKER__OperatorOverloading_Debug CMakeFiles/OperatorOverloading.dir/Module4/operatorOverloading.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/OperatorOverloading.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = OperatorOverloading
+  TARGET_PDB = OperatorOverloading.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target OperatorOverloading1
+
+
+#############################################
+# Order-only phony target for OperatorOverloading1
+
+build cmake_object_order_depends_target_OperatorOverloading1: phony || CMakeFiles/OperatorOverloading1.dir
+
+build CMakeFiles/OperatorOverloading1.dir/Module4/operatorOverloading1.cpp.o: CXX_COMPILER__OperatorOverloading1_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module4/operatorOverloading1.cpp || cmake_object_order_depends_target_OperatorOverloading1
+  DEP_FILE = CMakeFiles/OperatorOverloading1.dir/Module4/operatorOverloading1.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/OperatorOverloading1.dir
+  OBJECT_FILE_DIR = CMakeFiles/OperatorOverloading1.dir/Module4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target OperatorOverloading1
+
+
+#############################################
+# Link the executable OperatorOverloading1
+
+build OperatorOverloading1: CXX_EXECUTABLE_LINKER__OperatorOverloading1_Debug CMakeFiles/OperatorOverloading1.dir/Module4/operatorOverloading1.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/OperatorOverloading1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = OperatorOverloading1
+  TARGET_PDB = OperatorOverloading1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target NotMemberFunctions
+
+
+#############################################
+# Order-only phony target for NotMemberFunctions
+
+build cmake_object_order_depends_target_NotMemberFunctions: phony || CMakeFiles/NotMemberFunctions.dir
+
+build CMakeFiles/NotMemberFunctions.dir/Module4/NotMemberFunctions.cpp.o: CXX_COMPILER__NotMemberFunctions_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module4/NotMemberFunctions.cpp || cmake_object_order_depends_target_NotMemberFunctions
+  DEP_FILE = CMakeFiles/NotMemberFunctions.dir/Module4/NotMemberFunctions.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/NotMemberFunctions.dir
+  OBJECT_FILE_DIR = CMakeFiles/NotMemberFunctions.dir/Module4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target NotMemberFunctions
+
+
+#############################################
+# Link the executable NotMemberFunctions
+
+build NotMemberFunctions: CXX_EXECUTABLE_LINKER__NotMemberFunctions_Debug CMakeFiles/NotMemberFunctions.dir/Module4/NotMemberFunctions.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/NotMemberFunctions.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = NotMemberFunctions
+  TARGET_PDB = NotMemberFunctions.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target MemberFunctions
+
+
+#############################################
+# Order-only phony target for MemberFunctions
+
+build cmake_object_order_depends_target_MemberFunctions: phony || CMakeFiles/MemberFunctions.dir
+
+build CMakeFiles/MemberFunctions.dir/Module4/MemberFunctions.cpp.o: CXX_COMPILER__MemberFunctions_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module4/MemberFunctions.cpp || cmake_object_order_depends_target_MemberFunctions
+  DEP_FILE = CMakeFiles/MemberFunctions.dir/Module4/MemberFunctions.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/MemberFunctions.dir
+  OBJECT_FILE_DIR = CMakeFiles/MemberFunctions.dir/Module4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target MemberFunctions
+
+
+#############################################
+# Link the executable MemberFunctions
+
+build MemberFunctions: CXX_EXECUTABLE_LINKER__MemberFunctions_Debug CMakeFiles/MemberFunctions.dir/Module4/MemberFunctions.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/MemberFunctions.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = MemberFunctions
+  TARGET_PDB = MemberFunctions.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target FriendsExample
+
+
+#############################################
+# Order-only phony target for FriendsExample
+
+build cmake_object_order_depends_target_FriendsExample: phony || CMakeFiles/FriendsExample.dir
+
+build CMakeFiles/FriendsExample.dir/Module4/FriendsExample.cpp.o: CXX_COMPILER__FriendsExample_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module4/FriendsExample.cpp || cmake_object_order_depends_target_FriendsExample
+  DEP_FILE = CMakeFiles/FriendsExample.dir/Module4/FriendsExample.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/FriendsExample.dir
+  OBJECT_FILE_DIR = CMakeFiles/FriendsExample.dir/Module4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target FriendsExample
+
+
+#############################################
+# Link the executable FriendsExample
+
+build FriendsExample: CXX_EXECUTABLE_LINKER__FriendsExample_Debug CMakeFiles/FriendsExample.dir/Module4/FriendsExample.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/FriendsExample.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = FriendsExample
+  TARGET_PDB = FriendsExample.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target FriendClass
+
+
+#############################################
+# Order-only phony target for FriendClass
+
+build cmake_object_order_depends_target_FriendClass: phony || CMakeFiles/FriendClass.dir
+
+build CMakeFiles/FriendClass.dir/Module4/FriendClass.cpp.o: CXX_COMPILER__FriendClass_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module4/FriendClass.cpp || cmake_object_order_depends_target_FriendClass
+  DEP_FILE = CMakeFiles/FriendClass.dir/Module4/FriendClass.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/FriendClass.dir
+  OBJECT_FILE_DIR = CMakeFiles/FriendClass.dir/Module4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target FriendClass
+
+
+#############################################
+# Link the executable FriendClass
+
+build FriendClass: CXX_EXECUTABLE_LINKER__FriendClass_Debug CMakeFiles/FriendClass.dir/Module4/FriendClass.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/FriendClass.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = FriendClass
+  TARGET_PDB = FriendClass.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target FriendsExample2
+
+
+#############################################
+# Order-only phony target for FriendsExample2
+
+build cmake_object_order_depends_target_FriendsExample2: phony || CMakeFiles/FriendsExample2.dir
+
+build CMakeFiles/FriendsExample2.dir/Module4/FriendsExample2.cpp.o: CXX_COMPILER__FriendsExample2_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module4/FriendsExample2.cpp || cmake_object_order_depends_target_FriendsExample2
+  DEP_FILE = CMakeFiles/FriendsExample2.dir/Module4/FriendsExample2.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/FriendsExample2.dir
+  OBJECT_FILE_DIR = CMakeFiles/FriendsExample2.dir/Module4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target FriendsExample2
+
+
+#############################################
+# Link the executable FriendsExample2
+
+build FriendsExample2: CXX_EXECUTABLE_LINKER__FriendsExample2_Debug CMakeFiles/FriendsExample2.dir/Module4/FriendsExample2.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/FriendsExample2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = FriendsExample2
+  TARGET_PDB = FriendsExample2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target PrePostfixExample
+
+
+#############################################
+# Order-only phony target for PrePostfixExample
+
+build cmake_object_order_depends_target_PrePostfixExample: phony || CMakeFiles/PrePostfixExample.dir
+
+build CMakeFiles/PrePostfixExample.dir/Module4/PrePostfixExample.cpp.o: CXX_COMPILER__PrePostfixExample_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module4/PrePostfixExample.cpp || cmake_object_order_depends_target_PrePostfixExample
+  DEP_FILE = CMakeFiles/PrePostfixExample.dir/Module4/PrePostfixExample.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/PrePostfixExample.dir
+  OBJECT_FILE_DIR = CMakeFiles/PrePostfixExample.dir/Module4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target PrePostfixExample
+
+
+#############################################
+# Link the executable PrePostfixExample
+
+build PrePostfixExample: CXX_EXECUTABLE_LINKER__PrePostfixExample_Debug CMakeFiles/PrePostfixExample.dir/Module4/PrePostfixExample.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/PrePostfixExample.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = PrePostfixExample
+  TARGET_PDB = PrePostfixExample.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ArrayExample
+
+
+#############################################
+# Order-only phony target for ArrayExample
+
+build cmake_object_order_depends_target_ArrayExample: phony || CMakeFiles/ArrayExample.dir
+
+build CMakeFiles/ArrayExample.dir/Module4/ArrayExample.cpp.o: CXX_COMPILER__ArrayExample_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module4/ArrayExample.cpp || cmake_object_order_depends_target_ArrayExample
+  DEP_FILE = CMakeFiles/ArrayExample.dir/Module4/ArrayExample.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/ArrayExample.dir
+  OBJECT_FILE_DIR = CMakeFiles/ArrayExample.dir/Module4
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ArrayExample
+
+
+#############################################
+# Link the executable ArrayExample
+
+build ArrayExample: CXX_EXECUTABLE_LINKER__ArrayExample_Debug CMakeFiles/ArrayExample.dir/Module4/ArrayExample.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/ArrayExample.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ArrayExample
+  TARGET_PDB = ArrayExample.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -908,7 +1187,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug
 
-build all: phony CLion NoArray SimpleArray SimpleArrayVer2 FunctionsArrays Search Sorting CommonErrorsArrays MotivationStructure Structures StructurePractice CommonErrorsStructs MotivationClasses BasicClass ClassesPractice OOPClasses StudentRegStart StringValidation ClassConstructors ClassMemberVariable ConstParam InlineFunc Constructors StaticMembers Vector Bubby StudentReg2
+build all: phony CLion NoArray SimpleArray SimpleArrayVer2 FunctionsArrays Search Sorting CommonErrorsArrays MotivationStructure Structures StructurePractice CommonErrorsStructs MotivationClasses BasicClass ClassesPractice OOPClasses StudentRegStart StringValidation ClassConstructors ClassMemberVariable ConstParam InlineFunc Constructors StaticMembers Vector Bubby StudentReg2 OperatorOverloading OperatorOverloading1 NotMemberFunctions MemberFunctions FriendsExample FriendClass FriendsExample2 PrePostfixExample ArrayExample
 
 # =============================================================================
 # Built-in targets

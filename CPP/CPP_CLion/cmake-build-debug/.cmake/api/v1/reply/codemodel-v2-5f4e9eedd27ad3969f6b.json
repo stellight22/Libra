@@ -41,7 +41,16 @@
 						23,
 						24,
 						25,
-						26
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35
 					]
 				}
 			],
@@ -82,12 +91,28 @@
 						23,
 						24,
 						25,
-						26
+						26,
+						27,
+						28,
+						29,
+						30,
+						31,
+						32,
+						33,
+						34,
+						35
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ArrayExample::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ArrayExample-Debug-1d7a1661c6f115bac148.json",
+					"name" : "ArrayExample",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 0,
 					"id" : "BasicClass::@6890427a1f51a3e7e1df",
@@ -160,6 +185,27 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "FriendClass::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FriendClass-Debug-11153062b3d598a82a67.json",
+					"name" : "FriendClass",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FriendsExample::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FriendsExample-Debug-25a53450722dba8e080a.json",
+					"name" : "FriendsExample",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "FriendsExample2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-FriendsExample2-Debug-ccbe045d4db0868be545.json",
+					"name" : "FriendsExample2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "FunctionsArrays::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-FunctionsArrays-Debug-ad4dd25a061b3073c6f7.json",
 					"name" : "FunctionsArrays",
@@ -170,6 +216,13 @@
 					"id" : "InlineFunc::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-InlineFunc-Debug-6aa71867c30633389b7d.json",
 					"name" : "InlineFunc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MemberFunctions::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MemberFunctions-Debug-44444487f630e94ef51d.json",
+					"name" : "MemberFunctions",
 					"projectIndex" : 0
 				},
 				{
@@ -195,9 +248,37 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "NotMemberFunctions::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-NotMemberFunctions-Debug-9d1b930561bdb087306c.json",
+					"name" : "NotMemberFunctions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "OOPClasses::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-OOPClasses-Debug-6b9b8079ff96893fcec3.json",
 					"name" : "OOPClasses",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OperatorOverloading::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OperatorOverloading-Debug-a867a37c79e6e8bc9ca1.json",
+					"name" : "OperatorOverloading",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OperatorOverloading1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OperatorOverloading1-Debug-3e77236f9c334a3aedc4.json",
+					"name" : "OperatorOverloading1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PrePostfixExample::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PrePostfixExample-Debug-7e9da0ecdce5f3bf59e9.json",
+					"name" : "PrePostfixExample",
 					"projectIndex" : 0
 				},
 				{
