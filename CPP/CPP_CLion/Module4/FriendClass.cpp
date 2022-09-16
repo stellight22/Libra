@@ -3,7 +3,7 @@ using namespace std;
 
 class Square;
 
-class Rectangle {
+class Rectangle{
     int width, height;
 
 public:
@@ -14,18 +14,20 @@ public:
     void morph(Square &);
 };
 
-class Square {
+class Square{
     int side;
 
 public:
     Square(int s = 1):side(s){}
-    void display() {
+    void display()
+    {
         cout << "Square: " << side * side << endl;
     };
     friend class Rectangle;
 };
 
-void Rectangle::morph(Square &s) {
+void Rectangle::morph(Square &s)
+{
     width = s.side;
     height = s.side;
 }

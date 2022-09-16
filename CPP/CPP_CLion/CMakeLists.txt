@@ -44,7 +44,7 @@ add_executable(FriendClass Module4/FriendClass.cpp)
 add_executable(FriendsExample2 Module4/FriendsExample2.cpp)
 add_executable(PrePostfixExample Module4/PrePostfixExample.cpp)
 add_executable(ArrayExample Module4/ArrayExample.cpp)
-
+add_executable(StudentReg3 Module4/StudentReg3.cpp)
 
 
 
