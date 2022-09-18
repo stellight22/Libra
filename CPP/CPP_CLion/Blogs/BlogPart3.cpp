@@ -40,6 +40,7 @@ const std::string WHITESPACE = " \n\r\t\f\v";
 //////////////////////////////////////////////////////
 //Classes
 //////////////////////////////////////////////////////
+
 class Post
 {
     private:
@@ -78,15 +79,15 @@ class Post
             return User;
         }
 
+        friend ostream& operator <<(ostream &outputStream, const Post &p);
+        friend bool operator ==(const Post &otherPost1, const Post &otherPost2);
 };
-
 
 class Area
 {
     private:
-        string Name; //name of Area
-        Post Posts[MAX_NUM_POSTS];//array of posts
-        int indxLastPost = -1; //array index of last post in arary
+        string Name; // Name of Area
+        vector <Post> Posts;//array of posts
         string description;
 
     public:
@@ -115,29 +116,15 @@ class Area
             Name = nm;
         };
 
-        // return the index of the last post
-        int getIndxLastPost()
+        int getPostSize()
         {
-            return indxLastPost;
-        };
+            return Posts.size();
+        }
 
         // add post
-        int AddPost(Post p)
+        void AddPost(Post p)
         {
-            //validate that less than MAX_NUM_POSTS have been added
-            // to this blog
-            if (indxLastPost + 1 < MAX_NUM_POSTS) 
-            {
-                //incr indxLastPost
-                indxLastPost++;
-                //set indxLastPost to p
-                Posts[indxLastPost] = p;
-                //return 1 - added
-                return 1;
-            } 
-            else
-                //invalid no room for new post
-                return -1;
+           Posts.push_back(p);
         }
 
         void EditPost(int postId, string title, string text, string user)
@@ -150,7 +137,7 @@ class Area
         // get post
         bool getPost(int i, Post &p)
         {
-            if (i <= indxLastPost) // i is valid
+            if (i <= Posts.size()) // i is valid
             {
                 p = Posts[i]; //set post
                 return true; //return true
@@ -159,7 +146,35 @@ class Area
                 return false; //return false
             }
         }
+
+        friend ostream& operator <<(ostream &outputStream, const Area &area);
 };
+
+////////////////////////////////////////
+//Friendly Overloads
+////////////////////////////////////////
+
+// Post Overloads
+ostream& operator <<(ostream &outputStream, const Post &p)
+{
+    outputStream<<"Post Title:"<<p.Title<<endl;
+    outputStream<<"Post Text:"<<p.Text<<endl;
+    outputStream<<"Post User:"<<p.User<<endl;
+    return outputStream;
+}
+bool operator ==(const Post &otherPost1, const Post &otherPost2)
+{
+    return otherPost1.Title == otherPost2.Title;
+}
+
+// Area Overloads
+ostream& operator <<(ostream &outputStream, const Area &area)
+{
+    outputStream<<"Area Name:"<<area.Name<<endl;
+    outputStream<<"Area Description:"<<area.description<<endl;
+    return outputStream;
+}
+
 
 ////////////////////////////////////////
 //String Functions
@@ -187,7 +202,7 @@ string trim(const std::string &s)
 ////////////////////////////////////////
 // Area Init Function
 ////////////////////////////////////////
-void initAreas(Area areas[])
+void initAreas(vector<Area>& areas)
 {
     //init Com Sci
     areas[0].setName("Comp Sci");
@@ -286,7 +301,7 @@ void displayMenu()
 }
 
 //Display Blog Area
-void DisplayBlogAreas(Area areas[])
+void DisplayBlogAreas(vector<Area>& areas)
 {
     cout << endl;
     cout << "Display Blog areas..." << endl;
@@ -307,7 +322,7 @@ void DisplayPostsABlog(Area a)
     cout << "Posts for " << a.getName() << endl;
 
     //user has selected to display blog areas
-    for (int i = 0; i <= a.getIndxLastPost(); i++) {
+    for (int i = 0; i <= a.getPostSize(); i++) {
         Post p;
         bool found = a.getPost(i, p);
         if (found) {
@@ -323,11 +338,11 @@ void DisplayPostsABlog(Area a)
 
 
 //Display Post
-void DisplayPost(Area area[] , int areaID, int postID)
+void DisplayPost(vector<Area>& areas, int areaID, int postID)
 {
     Post p;
 
-    bool found = area[areaID].getPost(postID, p);
+    bool found = areas[areaID].getPost(postID, p);
 
     if (found)
     {
@@ -362,16 +377,16 @@ int getValidBlogArea()
 }
 
 //Post Index Validation
-int getValidPostIndex(Area area[], int areaID)
+int getValidPostIndex(vector<Area>& areas, int areaID)
 {
     int post;
     //prompt and read in Blog Area Index
     cout << "Please enter in a Post Index" << endl;
     cin >> post;
 
-    while (post < 0 || post > area[areaID].getIndxLastPost() )
+    while (post < 0 || post > areas[areaID].getPostSize() )
     {
-        cout << "Please re-enter a Post Index for " << area[areaID].getName() << endl;
+        cout << "Please re-enter a Post Index for " << areas[areaID].getName() << endl;
         cin >> post;
     }
 
@@ -485,7 +500,7 @@ void promptAction(string &strCh)
 }
 
 //Implement Users Action
-void implementAction(Area areas[], string strCh)
+void implementAction(vector<Area>& areas, string strCh)
 {
     //If user selected A
     if ((strCh == "A") || (strCh == "a"))
@@ -567,8 +582,8 @@ void implementAction(Area areas[], string strCh)
 
 int main() 
 {
-    //Array of areas
-    Area areas[NUM_AREAS];
+    // Array of areas
+    vector <Area> areas(NUM_AREAS);
 
     //Initialize areas
     initAreas(areas);
@@ -579,7 +594,8 @@ int main()
     string UserAction;
 
     //Continue until user decides to quit
-    do {
+    do 
+    {
         promptAction(UserAction);
         implementAction(areas, UserAction);
 
