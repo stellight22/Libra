@@ -13,7 +13,21 @@
  * */
 
 //////////////////////////////////////////////////////
-//Program Headers
+// Table of Content
+//// Program Headers
+//// Global Constants
+//// Classes
+//// Friendly Overloads
+//// String Functions
+//// Area Init Function
+//// Menu Functions
+//// Validation Functions
+//// User Action Functions
+//////// Main
+//////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////
+// Program Headers
 //////////////////////////////////////////////////////
 #include <iostream>
 #include <string>
@@ -23,37 +37,34 @@
 using namespace std;
 
 //////////////////////////////////////////////////////
-//Global Constants
+// Global Constants
 //////////////////////////////////////////////////////
 
-//Number of Areas
-const int NUM_AREAS = 5; //added 2+3 = 5
+// Number of Areas
+const int NUM_AREAS = 5; 
 
-//Maximum number of Posts
-const int MAX_NUM_POSTS = 10;
-
-//Whitespace constants
+// Whitespace constants
 const std::string WHITESPACE = " \n\r\t\f\v";
 
 
 
 //////////////////////////////////////////////////////
-//Classes
+// Classes
 //////////////////////////////////////////////////////
 
 class Post
 {
     private:
-        string Title; //Title
-        string Text; //Text
-        string User; //User
+        string Title; // Title
+        string Text; // Text
+        string User; // User
 
     public:
-        //Constructor
+        // Constructor
         Post(){ };
         Post(string t, string txt, string u ){Title = t; Text = txt; User = u;};
 
-        //Accessor and mutator functions
+        // Accessor and mutator functions
         void setTitle(string t)
         {
             Title = t;
@@ -87,30 +98,30 @@ class Area
 {
     private:
         string Name; // Name of Area
-        vector <Post> Posts;//array of posts
+        vector <Post> Posts;// Array of posts
         string description;
 
     public:
-        // return the name of the Area
+        // Return the name of the Area
         string getName()
         {
             return Name;
         };
 
-        //adding accessor and mutator methods for description
-        //set the description of Area
+        // Adding accessor and mutator methods for description
+        // Set the description of Area
         void setDesc(string d)
         {
             description = d;
         };
 
-        // return the name of the Area description
+        // Return the name of the Area description
         string getDesc()
         {
             return description;
         };
 
-        //set the name of the Area
+        // Set the name of the Area
         void setName(string nm)
         {
             Name = nm;
@@ -121,7 +132,7 @@ class Area
             return Posts.size();
         }
 
-        // add post
+        // Add post
         void AddPost(Post p)
         {
            Posts.push_back(p);
@@ -134,16 +145,17 @@ class Area
             Posts[postId].setUser(user);
         }
 
-        // get post
+        // Get post
         bool getPost(int i, Post &p)
         {
-            if (i <= Posts.size()) // i is valid
+            if (i < Posts.size()) 
             {
-                p = Posts[i]; //set post
-                return true; //return true
-            } else
-            { //i is not valid
-                return false; //return false
+                p = Posts[i]; 
+                return true; 
+            } 
+            else
+            { 
+                return false; 
             }
         }
 
@@ -151,15 +163,15 @@ class Area
 };
 
 ////////////////////////////////////////
-//Friendly Overloads
+// Friendly Overloads
 ////////////////////////////////////////
 
 // Post Overloads
 ostream& operator <<(ostream &outputStream, const Post &p)
 {
-    outputStream<<"Post Title:"<<p.Title<<endl;
-    outputStream<<"Post Text:"<<p.Text<<endl;
-    outputStream<<"Post User:"<<p.User<<endl;
+    outputStream<<"Title : "<<p.Title<<endl;
+    outputStream<<"By : "<<p.User<<endl;
+    outputStream<<"Text : "<<p.Text<<endl;
     return outputStream;
 }
 bool operator ==(const Post &otherPost1, const Post &otherPost2)
@@ -170,30 +182,30 @@ bool operator ==(const Post &otherPost1, const Post &otherPost2)
 // Area Overloads
 ostream& operator <<(ostream &outputStream, const Area &area)
 {
-    outputStream<<"Area Name:"<<area.Name<<endl;
-    outputStream<<"Area Description:"<<area.description<<endl;
+    outputStream<<"Area Name : "<<area.Name<<endl;
+    outputStream<<"Area Description : "<<area.description<<endl;
     return outputStream;
 }
 
 
 ////////////////////////////////////////
-//String Functions
+// String Functions
 ////////////////////////////////////////
-//Left trim - remove all white space characters on the left
+// Left trim - remove all white space characters on the left
 string ltrim(const std::string &s)
 {
     size_t start = s.find_first_not_of(WHITESPACE);
     return (start == std::string::npos) ? "" : s.substr(start);
 }
 
-//Right trim - remove all white space characters on the right
+// Right trim - remove all white space characters on the right
 string rtrim(const std::string &s)
 {
     size_t end = s.find_last_not_of(WHITESPACE);
     return (end == std::string::npos) ? "" : s.substr(0, end + 1);
 }
 
-//Trim - remove all white space characters on the left or right
+// Trim - remove all white space characters on the left or right
 string trim(const std::string &s)
 {
     return rtrim(ltrim(s));
@@ -204,7 +216,7 @@ string trim(const std::string &s)
 ////////////////////////////////////////
 void initAreas(vector<Area>& areas)
 {
-    //init Com Sci
+    // Init Com Sci
     areas[0].setName("Comp Sci");
     //add a post to the Com Sci area
     Post p{"I love programming","Programming is so much fun.","Tom"};
@@ -283,53 +295,52 @@ void initAreas(vector<Area>& areas)
 }
 
 ////////////////////////////////////////
-//Menu Functions
+// Menu Functions
 ////////////////////////////////////////
 
-//Display Menu
+// Display Menu
 void displayMenu()
 {
-    // display menu options to user
+    // Display menu options to user
     cout << endl;
     cout << "Please select from the following options..." << endl;
-    cout << " A  - Display Blog areas" << endl;
-    cout << " B  - Display all posts for a blog" << endl;
-    cout << " C  - Add a post to an area" << endl;
-    cout << " D  - Display a post for a blog" << endl; 
+    cout << " A - Display Blog areas" << endl;
+    cout << " B - Display all posts for a blog" << endl;
+    cout << " C - Add a post to an area" << endl;
+    cout << " D - Display a post for a blog" << endl; 
     cout << " E - Edit a post for a blog" << endl;
-    cout << " Q  - Quit" << endl;
+    cout << " Q - Quit" << endl;
 }
 
-//Display Blog Area
+// Display Blog Area
 void DisplayBlogAreas(vector<Area>& areas)
 {
     cout << endl;
     cout << "Display Blog areas..." << endl;
     //user has selected to display blog areas
-    for (int i = 0; i < NUM_AREAS; i++) {
+    for (int i = 0; i < areas.size(); i++) {
         cout << "Area Index : " << i << endl;
-        cout << "Area Name : " << areas[i].getName() << endl;
-        cout << "Area Description : " << areas[i].getDesc() <<endl; //add the description to the output displayed
+        cout << areas[i] << endl;
         cout << "******************" << endl;
+   
     }
 
 }
 
-//Display Post Area
+// Display Post Area
 void DisplayPostsABlog(Area a)
 {
     cout << endl;
     cout << "Posts for " << a.getName() << endl;
 
-    //user has selected to display blog areas
-    for (int i = 0; i <= a.getPostSize(); i++) {
+    // User has selected to display blog areas
+    for (int i = 0; i < a.getPostSize(); i++) 
+    {
         Post p;
         bool found = a.getPost(i, p);
         if (found) {
             cout << "Post Index : " << i << endl;
-            cout << "Title : " << p.getTitle() << endl;
-            cout << "By : " << p.getUser() << endl;
-            cout << "Text : " << p.getText() << endl;
+            cout << p << endl;
             cout << "******************" << endl;
         }
     }
@@ -337,7 +348,7 @@ void DisplayPostsABlog(Area a)
 }
 
 
-//Display Post
+// Display Post
 void DisplayPost(vector<Area>& areas, int areaID, int postID)
 {
     Post p;
@@ -347,10 +358,8 @@ void DisplayPost(vector<Area>& areas, int areaID, int postID)
     if (found)
     {
         cout << endl;
-        cout << "Post Index:" << postID << endl;
-        cout << "Title:" << p.getTitle() << endl;
-        cout << "By:" << p.getUser() << endl;
-        cout << "Text:" << p.getText() << endl;
+        cout << "Post Index : " << postID << endl;
+        cout << p << endl;
         cout << "******************" << endl;
     }
 }
@@ -359,32 +368,31 @@ void DisplayPost(vector<Area>& areas, int areaID, int postID)
 // Validation Functions
 ////////////////////////////////////////
 
-//Area Index Validation
-int getValidBlogArea()
+// Area Index Validation
+int getValidBlogArea(vector<Area>& areas)
 {
     int area;
-    //prompt and read in Blog Area Index
+    // Prompt and read in Blog Area Index
     cout << "Please enter in a Blog Area Index" << endl;
     cin >> area;
-    //input validation loop
-    while ((area < 0) || (area >= NUM_AREAS))
+    // Input validation loop
+    while ((area < 0) || (area >= areas.size()))
     {
         cout << "Please re-enter a Blog Area Index" << endl;
         cin >> area;
     }
-    //return valid Blog Area Index
     return area;
 }
 
-//Post Index Validation
+// Post Index Validation
 int getValidPostIndex(vector<Area>& areas, int areaID)
 {
     int post;
-    //prompt and read in Blog Area Index
+    // Prompt and read in Blog Area Index
     cout << "Please enter in a Post Index" << endl;
     cin >> post;
 
-    while (post < 0 || post > areas[areaID].getPostSize() )
+    while (post < 0 || post >= areas[areaID].getPostSize() )
     {
         cout << "Please re-enter a Post Index for " << areas[areaID].getName() << endl;
         cin >> post;
@@ -393,27 +401,49 @@ int getValidPostIndex(vector<Area>& areas, int areaID)
     return post;
 }
 
-
-//Blog Title Validation
-string getValidPostTitle()
+bool uniquePostTitle(Area a , Post p)
 {
+    bool flag = false;
+    Post tmp;
+
+    for(int i=0; i < a.getPostSize(); i++)
+    {
+        a.getPost(i,tmp);
+
+        if (tmp == p)
+        {
+            cout << "Another post in this blog has an identical title.." << endl;
+            cout << "Please create a new unique title.." << endl;
+            cout << "Please enter in the title..." << endl;
+            return true;
+        }
+    }
+
+    return false;
+}
+
+// Blog Title Validation
+string getValidPostTitle(Area a)
+{
+    Post tmp;
     string title;
     bool flag = true;
-    //prompt and read in Blog Area Index
+
+    // Prompt and read in Blog Area Index
     cout << "Please enter in a Post Title" << endl;
     cout << "Title must contain at least 1 non white space character and at most 20 non white space characters" << endl;
-    cin.ignore();         //ignores the last character entered
+    // Ignores the last character entered
+    cin.ignore();         
     getline(cin, title);
-    title = trim(title);
-
+    tmp.setTitle(trim(title));
 
     do
     {
-        if (title.length() < 1 || title.length() > 21 || title[0] == ' ' )
+        if (tmp.getTitle().length() < 1 || tmp.getTitle().length() > 21 || tmp.getTitle()[0] == ' ' || uniquePostTitle(a,tmp))
         {
             cout << "Title must contain at least 1 non white space character and at most 20 non white space characters" << endl;
             getline(cin,title);
-            title = trim(title);
+            tmp.setTitle(trim(title));
         }
         else
         {
@@ -421,18 +451,18 @@ string getValidPostTitle()
         }
 
     } while (flag == true);
-    //return valid Blog Area Index
-    return title;
+    
+    // Return valid Blog Area Index
+    return tmp.getTitle();
 }
 
 string getValidUsername()
 {
     string username;
     bool flag = true;
-    //prompt and read in Blog Area Index
+    // Prompt and read in Blog Area Index
     cout << "Please enter in a Username" << endl;
     cout << "Username must contain at least 1 non white space character and at most 10 non white space characters" << endl;
-    //cin.ignore();
     getline(cin, username);
     username = trim(username);
 
@@ -450,7 +480,8 @@ string getValidUsername()
         }
 
     } while (flag == true);
-    //return valid Blog Area Index
+    
+    // Return valid Blog Area Index
     return username;
 }
 
@@ -479,7 +510,8 @@ string getValidText()
         }
 
     } while (flag == true);
-    //return valid Blog Area Index
+    
+    // Return valid Blog Area Index
     return text;
 }
 
@@ -487,7 +519,8 @@ string getValidText()
 ////////////////////////////////////////
 // User Action Functions
 ////////////////////////////////////////
-//User Prompt
+
+// User Prompt
 void promptAction(string &strCh) 
 {
     //display menu options to screen
@@ -499,32 +532,32 @@ void promptAction(string &strCh)
     cin >> strCh;
 }
 
-//Implement Users Action
+// Implement Users Action
 void implementAction(vector<Area>& areas, string strCh)
 {
-    //If user selected A
+    // If user selected A
     if ((strCh == "A") || (strCh == "a"))
     {
         cout << "Display blog areas..." << endl;
 
         DisplayBlogAreas(areas);
     }
-        //If user selected B
+    // If user selected B
     else if ((strCh == "B") || (strCh == "b"))
     {
         cout << "Display all posts for a blog..." << endl;
-        int areaID = getValidBlogArea();
+        int areaID = getValidBlogArea(areas);
         DisplayPostsABlog(areas[areaID]);
     }
-        //If user selected C
+    // If user selected C
     else if ((strCh == "C") || (strCh == "c"))
     {
         cout << "Add a post to a blog..." << endl;
 
-        int areaID = getValidBlogArea();
+        int areaID = getValidBlogArea(areas);
 
         Post temp;
-        temp.setTitle(getValidPostTitle());
+        temp.setTitle(getValidPostTitle(areas[areaID]));
         temp.setUser(getValidUsername());
         temp.setText(getValidText());
 
@@ -535,26 +568,26 @@ void implementAction(vector<Area>& areas, string strCh)
     {
         cout << "Display a post for a blog..." << endl;
 
-        int areaID = getValidBlogArea();
+        int areaID = getValidBlogArea(areas);
 
         int postId = getValidPostIndex(areas, areaID);
 
         DisplayPost(areas, areaID, postId);
 
     }
-    //If User selects option E: to edit EXISTING post
+    // If User selects option E: to edit EXISTING post
     else if ((strCh == "E") || (strCh == "e"))
     {
         cout << "Edit a post for a blog..." << endl;
 
-        int areaID = getValidBlogArea();
+        int areaID = getValidBlogArea(areas);
 
         int postId = getValidPostIndex(areas, areaID);
 
         DisplayPost(areas, areaID, postId);
 
         Post temp;
-        temp.setTitle(getValidPostTitle());
+        temp.setTitle(getValidPostTitle(areas[areaID]));
         temp.setUser(getValidUsername());
         temp.setText(getValidText());
 
@@ -562,13 +595,13 @@ void implementAction(vector<Area>& areas, string strCh)
         //areas[areaID].EditPost(postId, getValidPostTitle(), getValidUsername(), getValidText());
         cout << "Post successfully editted." << endl;   
     }
-        //If user selected Q
+    // If user selected Q
     else if ((strCh == "Q") || (strCh == "q"))
     {
-        //User has selected to quit
+        // User has selected to quit
         cout << "Bye..." << endl;
     }
-        //User has selected an invalid option
+        // User has selected an invalid option
     else
     {
         cout << strCh << " is not a valid option." << endl;
@@ -585,15 +618,17 @@ int main()
     // Array of areas
     vector <Area> areas(NUM_AREAS);
 
-    //Initialize areas
+    // Initialize areas
     initAreas(areas);
 
-    //Welcome
+    cout << "Area vector size:" << areas.size() << endl;
+
+    // Welcome
     cout << "Welcome to my Blog " << endl;
 
     string UserAction;
 
-    //Continue until user decides to quit
+    // Continue until user decides to quit
     do 
     {
         promptAction(UserAction);
