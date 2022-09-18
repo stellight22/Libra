@@ -34,5 +34,6 @@
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/FriendsExample2.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/PrePostfixExample.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/ArrayExample.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/StudentReg3.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

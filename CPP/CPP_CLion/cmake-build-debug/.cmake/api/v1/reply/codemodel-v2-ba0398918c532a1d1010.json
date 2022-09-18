@@ -50,7 +50,8 @@
 						32,
 						33,
 						34,
-						35
+						35,
+						36
 					]
 				}
 			],
@@ -100,7 +101,8 @@
 						32,
 						33,
 						34,
-						35
+						35,
+						36
 					]
 				}
 			],
@@ -342,6 +344,13 @@
 					"id" : "StudentReg2::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-StudentReg2-Debug-10c8c02d5db5e920481c.json",
 					"name" : "StudentReg2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "StudentReg3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-StudentReg3-Debug-1a83a2f5791abbea3bc8.json",
+					"name" : "StudentReg3",
 					"projectIndex" : 0
 				},
 				{
