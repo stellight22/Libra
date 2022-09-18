@@ -621,8 +621,6 @@ int main()
     // Initialize areas
     initAreas(areas);
 
-    cout << "Area vector size:" << areas.size() << endl;
-
     // Welcome
     cout << "Welcome to my Blog " << endl;
 
