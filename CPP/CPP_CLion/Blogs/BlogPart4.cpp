@@ -62,32 +62,32 @@ class Post
     public:
         // Constructor
         Post(){ };
-        Post(string t, string txt, string u ){Title = t; Text = txt; User = u;};
+        Post(string t, string txt, string u ){this->Title = t; this->Text = txt; this->User = u;};
 
         // Accessor and mutator functions
         void setTitle(string t) 
         {
-            Title = t;
+            this->Title = t;
         }
         string getTitle() const
         {
-            return Title;
+            return this->Title;
         }
         void setText(string txt)
         {
-            Text = txt;
+            this->Text = txt;
         }
         string getText() const
         {
-            return Text;
+            return this->Text;
         }
         void setUser(string u)
         {
-            User = u;
+            this->User = u;
         }
         string getUser() const
         {
-            return User;
+            return this->User;
         }
 
         friend ostream& operator <<(ostream &outputStream, const Post &p);
@@ -105,53 +105,53 @@ class Area
         // Return the name of the Area
         string getName() const 
         {
-            return Name;
+            return this->Name;
         };
 
         // Adding accessor and mutator methods for description
         // Set the description of Area
         void setDesc(string d)
         {
-            description = d;
+            this->description = d;
         };
 
         // Return the name of the Area description
         string getDesc() const
         {
-            return description;
+            return this->description;
         };
 
         // Set the name of the Area
         void setName(string nm)
         {
-            Name = nm;
+            this->Name = nm;
         };
         //Returns the size of the Posts vector
         int getPostSize() const
         {
-            return Posts.size();
+            return this->Posts.size();
         }
 
         // Add post
         void AddPost(Post p)
         {
-           Posts.push_back(p);
+           this->Posts.push_back(p);
         }
 
         void EditPost(int postId, string title, string text, string user)
         {
-            Posts[postId].setTitle(title);
-            Posts[postId].setText(text);
-            Posts[postId].setUser(user);
+            this->Posts[postId].setTitle(title);
+            this->Posts[postId].setText(text);
+            this->Posts[postId].setUser(user);
         }
 
         // Get post
         bool getPost(int i, Post &p) const
         {
-            if (i < Posts.size()) 
+            if (i < this->Posts.size()) 
             {
                 //an instance of class Post (p) is set to a Post instance at index(i) within the vector of the post class instances(Posts)
-                p = Posts[i]; 
+                p = this->Posts[i]; 
                 return true; 
             } 
             else

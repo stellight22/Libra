@@ -133,7 +133,7 @@ class Area
         {
             return Posts.size();
         }
-        
+
         // Add post
         void AddPost(Post p)
         {
@@ -404,7 +404,7 @@ int getValidPostIndex(vector<Area>& areas, int areaID)
     return post;
 }
 
-bool uniquePostTitle(Area a , Post p)
+bool uniquePostTitle(Area a , Post p)  
 {
     bool flag = false;
     Post tmp;

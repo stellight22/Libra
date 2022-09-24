@@ -52,6 +52,7 @@ int main()
     cout <<mango.comparePrice(melon)<<endl;
     cout <<mango.comparePrice(mango)<<endl;
     cout << melon.comparePrice(mango) <<endl;
+    this->comparePrice(melon);
 
     return 0;
 }
