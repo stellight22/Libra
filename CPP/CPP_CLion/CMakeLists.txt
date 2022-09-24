@@ -5,7 +5,6 @@ set(CMAKE_CXX_STANDARD 11)
 
 add_executable(CLion main.cpp)
 
-
 add_executable(NoArray Module1/NoArray.cpp)
 add_executable(SimpleArray Module1/SimpleArray.cpp)
 add_executable(SimpleArrayVer2 Module1/SimpleArrayVer2.cpp)
@@ -46,8 +45,18 @@ add_executable(PrePostfixExample Module4/PrePostfixExample.cpp)
 add_executable(ArrayExample Module4/ArrayExample.cpp)
 add_executable(StudentReg3 Module4/StudentReg3.cpp)
 
+add_executable(PtrMotivation Module5/PtrMotivation.cpp)
+add_executable(BasicPointers Module5/BasicPointers.cpp)
+add_executable(CallByValue Module5/CallByValue.cpp)
+add_executable(PtrToArray Module5/PtrToArray.cpp)
+add_executable(DynamicArrays Module5/DynamicArrays.cpp)
+add_executable(PtrToArray2 Module5/PtrToArray2.cpp)
+add_executable(StudentRegPart3 Module5/StudentRegPart3.cpp)
+add_executable(StudentRegPart4Ch10 Module5/StudentRegPart4Ch10.cpp)
+add_executable(AssignmentOpExStr Module5/AssignmentOpExStr.cpp)
 
-
+add_executable(TimeExamples Module5/TimeExamples/TimeExamples.cpp)
+add_executable(dtime Module5/TimeExamples/dtime.cpp)
 
 
 

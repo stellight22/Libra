@@ -1,0 +1,1 @@
+C:/cygwin64/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/STudentRegStart.dir/main.cpp.o CMakeFiles/STudentRegStart.dir/Course.cpp.o CMakeFiles/STudentRegStart.dir/Student.cpp.o  -o STudentRegStart.exe -Wl,--out-implib,libSTudentRegStart.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

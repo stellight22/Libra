@@ -1,17 +1,20 @@
 //
 // Created by Ahyeon  on 9/16/22.
-//**Add friend overload operator >> to Course class**
-//1)Add friend overload operator >> to the Course class
-//friend ostream& operator <<(ostream& outputStream, const Room& room);
-//It should display the name of the course, the number of credits, and the course description.
-//replace the similar logic in the program with cout <<CourseVariable;
-//**Add friend overload operator >> to Student class**
-//**Add overload operator < to Student class**
-//****Add option to program that if the user enters a M or m the name of the student who is registered for the
-// most courses next semester is displayed.
-//**Make all member functions that do not change the data to be constant functions**
-//**Use constant array parameters where possible**
-//
+
+//Using the this pointer
+        //Change all accessor and mutators in both the course and student classes to use this-> whenever possible
+//Using pointers
+//Change:
+//void implementUserAction(Student &stud,const Course courses[],const Student students[],string strCh);
+//int LocateCourseRegistration(int indxCourse,Student stud);
+//To:
+//void implementUserAction(Student *stud,const Course courses[],const Student students[],string strCh);
+//int LocateCourseRegistration(int indxCourse,Student *stud);
+//Using pointers to Arrays
+//Change
+//for (int i = 0;i<NUM_STUDENTS;i++)
+//initStudent(students[i]);
+
 
 #include <iostream>
 #include <string>
@@ -39,35 +42,35 @@ public:
     //name of course
     // return the name of the course
     string getName() const {
-        return Name;
+        return this->Name;
     };
 
     //set the name of the course
     void setName(string nm) {
-        Name = nm;
+        this->Name = nm;
     };
 
     //number of credits
     //return the number of credits
     int getNumberOfCredits() const
     {
-        return NumCredits;
+        return this->NumCredits;
     }
     void setNumCredits(int num)
     {
-        NumCredits = num;
+        this->NumCredits = num;
     }
 
     //course description
     //return the course description
     string getCourseDescription() const
     {
-        return CourseDescription;
+        return this->CourseDescription;
     }
     //set the course description
     void setCourseDescription(string desc)
     {
-        CourseDescription=desc;
+        this->CourseDescription=desc;
     }
 private:
     string Name; //name of course
@@ -83,12 +86,12 @@ public:
     Student() {};
 
     // name of student
-    string getName() const {return name;}
-    void setName(string nm) {name=nm;}
+    string getName() const {return this->name;}
+    void setName(string nm) {this->name=nm;}
 
     // vector of courses students is registered for
-    vector <int> getindexCoursesRegisteredFor() const {return indexCoursesRegisteredFor;}
-    void setindexCoursesRegisteredFor(vector <int> vtr) {indexCoursesRegisteredFor=vtr;}
+    vector <int> getindexCoursesRegisteredFor() const {return this->indexCoursesRegisteredFor;}
+    void setindexCoursesRegisteredFor(vector <int> vtr) {this->indexCoursesRegisteredFor=vtr;}
 
     //register student to a course
     void RegisterCourse(int Indx){indexCoursesRegisteredFor.push_back(Indx);}
@@ -125,7 +128,7 @@ int LocateStudent(const Student students[],string strNm);
 //Locate course in array
 int LocateCourse(const Course courses[],string strNm);
 //Locate course registration
-int LocateCourseRegistration(int indxCourse,Student stud);
+int LocateCourseRegistration(int indxCourse,Student *stud);
 
 
 //does this option require a user

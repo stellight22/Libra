@@ -1,5 +1,5 @@
 // Adding a Friend function allows a class to use a non-member function as if it were a member function 
-//A friend function also gains access to the private data members of the class
+//A friend function also gains access to the private data members of the class in which it is declared.
 #include <iostream>
 
 using namespace std;
