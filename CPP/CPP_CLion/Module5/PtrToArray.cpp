@@ -16,24 +16,30 @@ int main( )
     p = a;
 
     for (index = 0; index < 10; index++)
+    {
+        cout << *(a+index) << endl;
+        cout << index << endl;
+        cout << a+index << endl;
         *(a+index) = index;
+    }
+        
 
-    for (index = 0; index < 10; index++)
-        *(p+index) = *(p+index) + 1;
+    // for (index = 0; index < 10; index++)
+    //     *(p+index) = *(p+index) + 1;
 
-    for (index = 0; index < 10; index++)
-        cout << *(a+index) << " ";
+    // for (index = 0; index < 10; index++)
+    //     cout << *(a+index) << " ";
 
-//    for (index = 0; index < 10; index++)
-//        cout << p[index] << " ";
-//    cout << endl;
-//
-//    for (index = 0; index < 10; index++)
-//        p[index] = p[index] + 1;
-//
-//    for (index = 0; index < 10; index++)
-//        cout << a[index] << " ";
-    cout << endl;
+    // for (index = 0; index < 10; index++)
+    //     cout << p[index] << " ";
+    // cout << endl;
+
+    // for (index = 0; index < 10; index++)
+    //     p[index] = p[index] + 1;
+
+    // for (index = 0; index < 10; index++)
+    //     cout << a[index] << " ";
+    //     cout << endl;
 
     return 0;
 }

@@ -4,7 +4,8 @@ using namespace std;
 
 class Icecream
 {
-    //access modifier(public, private, protected, default is private)     
+    //access modifier(public, private, protected, default is private)  
+    //recall self from python to compare this-> (the calling object)   
     private:
         int scoops;
         string flavor;
@@ -48,7 +49,7 @@ int main()
     mango.setPrice(5.99);
     melon.setPrice(2.99);
     cout << "mango on left" <<endl;
-    if (mango > melon)
+    if (mango > melon)     //
         cout << "true" <<endl;
     else
         cout << "false" <<endl;

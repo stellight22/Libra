@@ -7,7 +7,7 @@
  * Section: COP3330-11
  * Assignment: Module 5 Assignment
  * Due Date: 09/25/2022
- * About this project: This project applies constant member functions and makefile.
+ * About this project: This project applies constant member functions, pointers and makefile.
  * Assumptions: Assumes correct user input.
  * All work below was performed by Ahyeon Cho
  * */
@@ -138,6 +138,12 @@ class Area
            this->Posts.push_back(p);
         }
 
+        //Delte post
+        void deletePost(int index)
+        {
+            this->Posts.erase(Posts.begin()+index);
+        }
+
         void EditPost(int postId, string title, string text, string user)
         {
             this->Posts[postId].setTitle(title);
@@ -215,83 +221,82 @@ string trim(const std::string &s)
 ////////////////////////////////////////
 // Area Init Function
 ////////////////////////////////////////
-void initAreas(vector<Area> &areas)
+void initAreas(vector<Area> *areas)
 {
     // Init Com Sci
-    areas[0].setName("Comp Sci");
+    areas->at(0).setName("Comp Sci");
     //Add a post to the Com Sci area
     Post p{"I love programming","Programming is so much fun.","Tom"};
-    areas[0].AddPost(p);
+    areas->at(0).AddPost(p);
     //Set description for areas[0]
-    areas[0].setDesc("This Area talks about computers.");
+    areas->at(0).setDesc("This Area talks about computers.");
 
     //Add another post to the Com Sci area
     Post p2;
     p2.setTitle("C++ versus Python");
     p2.setText("I like C++ more than Python.");
     p2.setUser("Sally");
-    areas[0].AddPost(p2);
+    areas->at(0).AddPost(p2);
 
     //init Current Events
-    areas[1].setName("Current Events");
+    areas->at(1).setName("Current Events");
     //add a post to the Current Events area
     Post p3{"Picnic Saturday","Join us at the park for a picnic on Saturday","Sue"};
-    areas[1].AddPost(p3);
+    areas->at(1).AddPost(p3);
     //set description for areas[1]
-    areas[1].setDesc("This Area talks about the latest community news.");
+    areas->at(1).setDesc("This Area talks about the latest community news.");
 
     //add 3 more areas and 2 posts to each
     //init foodie
-    areas[2].setName("Foodie Updates");
+    areas->at(2).setName("Foodie Updates");
     //set description for areas[2]
-    areas[2].setDesc("This Area is made for the food enthusiasts.");
+    areas->at(2).setDesc("This Area is made for the food enthusiasts.");
     //first post for Foodie area
     Post p5;
     p5.setTitle("Chocolate Shortage");
     p5.setText("Chocolate is in danger of extinction.");
     p5.setUser("Choco-lover");
-    areas[2].AddPost(p5);
+    areas->at(2).AddPost(p5);
     //second post for Foodie area, which is areas[2]
     Post p6;
     p6.setTitle("Paleo Diet");
     p6.setText("Eat lots of fish.");
     p6.setUser("Sushi-lover");
-    areas[2].AddPost(p6);
-
+    areas->at(2).AddPost(p6);
 
     //init travel
-    areas[3].setName("Travel Updates");
+    areas->at(3).setName("Travel Updates");
     //sets the description for the travel area
-    areas[3].setDesc("This Area is made for the travel enthusiasts.");
+    areas->at(3).setDesc("This Area is made for the travel enthusiasts.");
     //first post for travel area
     Post p7;
     p7.setTitle("COVID is OVER");
     p7.setText("Travel without masks!");
     p7.setUser("iloveparis");
-    areas[3].AddPost(p7);
+    areas->at(3).AddPost(p7);
     //second post for travel area, which is areas[3]
     Post p8;
     p8.setTitle("Portuguese Summer");
     p8.setText("Lots of group travel deals inside.");
     p8.setUser("miamor");
-    areas[3].AddPost(p8);
+    areas->at(3).AddPost(p8);
 
     //init friends
-    areas[4].setName("Friends Updates");
+    areas->at(4).setName("Friends Updates");
     //sets the description for the Friends area
-    areas[4].setDesc("This Area is made for the fans of the show Friends.");
+    areas->at(4).setDesc("This Area is made for the fans of the show Friends.");
     //first post for travel area
     Post p9;
     p9.setTitle("Ross is Back");
     p9.setText("PIVOT!!");
     p9.setUser("Monica");
-    areas[4].AddPost(p9);
+    areas->at(4).AddPost(p9);
     //second post for Foodie area, which is areas[2]
     Post p10;
     p10.setTitle("Joey is hitched!");
     p10.setText("Just kidding. How you doin'?");
     p10.setUser("pizzaLover");
-    areas[4].AddPost(p10);
+    areas->at(4).AddPost(p10);
 
 }
 
@@ -310,18 +315,19 @@ void displayMenu()
     cout << " C - Add a post to an area" << endl;
     cout << " D - Display a post for a blog" << endl; 
     cout << " E - Edit a post for a blog" << endl;
+    cout << " F - Delete a post from a blog" << endl;
     cout << " Q - Quit" << endl;
 }
 
 // Display Blog Area
-void DisplayBlogAreas(vector<Area> &areas)
+void DisplayBlogAreas(vector<Area> *areas)
 {
     cout << endl;
     cout << "Display Blog areas..." << endl;
     //user has selected to display blog areas
-    for (int i = 0; i < areas.size(); i++) {
+    for (int i = 0; i < areas->size(); i++) {
         cout << "Area Index : " << i << endl;
-        cout << areas[i] << endl;
+        cout << areas->at(i) << endl;
         cout << "******************" << endl;
    
     }
@@ -350,11 +356,11 @@ void DisplayPostsABlog(Area a)
 
 
 // Display Post
-void DisplayPost(vector<Area>& areas, int areaID, int postID)
+void DisplayPost(vector<Area> *areas, int areaID, int postID)
 {
     Post p;
 
-    bool found = areas[areaID].getPost(postID, p);
+    bool found = areas->at(areaID).getPost(postID, p);
 
     if (found)
     {
@@ -365,19 +371,20 @@ void DisplayPost(vector<Area>& areas, int areaID, int postID)
     }
 }
 
+
 ////////////////////////////////////////
 // Validation Functions
 ////////////////////////////////////////
 
 // Area Index Validation
-int getValidBlogArea(vector<Area> &areas)
+int getValidBlogArea(vector<Area> *areas)
 {
     int area;
     // Prompt and read in Blog Area Index
     cout << "Please enter in a Blog Area Index" << endl;
     cin >> area;
     // Input validation loop
-    while ((area < 0) || (area >= areas.size()))
+    while ((area < 0) || (area >= areas->size()))
     {
         cout << "Please re-enter a Blog Area Index" << endl;
         cin >> area;
@@ -386,16 +393,16 @@ int getValidBlogArea(vector<Area> &areas)
 }
 
 // Post Index Validation
-int getValidPostIndex(vector<Area>& areas, int areaID)
+int getValidPostIndex(vector<Area> *areas, int areaID)
 {
     int post;
     // Prompt and read in Blog Area Index
     cout << "Please enter in a Post Index" << endl;
     cin >> post;
 
-    while (post < 0 || post >= areas[areaID].getPostSize() )
+    while (post < 0 || post >= areas->at(areaID).getPostSize() )
     {
-        cout << "Please re-enter a Post Index for " << areas[areaID].getName() << endl;
+        cout << "Please re-enter a Post Index for " << areas->at(areaID).getName() << endl;
         cin >> post;
     }
 
@@ -534,7 +541,7 @@ void promptAction(string &strCh)
 }
 
 // Implement Users Action
-void implementAction(vector<Area> &areas, string strCh)
+void implementAction(vector<Area> *areas, string strCh)
 {
     // If user selected A
     if ((strCh == "A") || (strCh == "a"))
@@ -548,7 +555,7 @@ void implementAction(vector<Area> &areas, string strCh)
     {
         cout << "Display all posts for a blog..." << endl;
         int areaID = getValidBlogArea(areas);
-        DisplayPostsABlog(areas[areaID]);
+        DisplayPostsABlog(areas->at(areaID));
     }
     // If user selected C
     else if ((strCh == "C") || (strCh == "c"))
@@ -558,11 +565,11 @@ void implementAction(vector<Area> &areas, string strCh)
         int areaID = getValidBlogArea(areas);
 
         Post temp;
-        temp.setTitle(getValidPostTitle(areas[areaID]));
+        temp.setTitle(getValidPostTitle(areas->at(areaID)));
         temp.setUser(getValidUsername());
         temp.setText(getValidText());
 
-        areas[areaID].AddPost(temp);
+        areas->at(areaID).AddPost(temp);
         cout << "Post successfully added." << endl;
     }
     else if ((strCh == "D") || (strCh == "d"))
@@ -588,13 +595,27 @@ void implementAction(vector<Area> &areas, string strCh)
         DisplayPost(areas, areaID, postId);
 
         Post temp;
-        temp.setTitle(getValidPostTitle(areas[areaID]));
+        temp.setTitle(getValidPostTitle(areas->at(areaID)));
         temp.setUser(getValidUsername());
         temp.setText(getValidText());
 
-        areas[areaID].EditPost(postId, temp.getTitle(), temp.getText(), temp.getUser());
+        areas->at(areaID).EditPost(postId, temp.getTitle(), temp.getText(), temp.getUser());
         //areas[areaID].EditPost(postId, getValidPostTitle(), getValidUsername(), getValidText());
         cout << "Post successfully editted." << endl;   
+    }
+    else if ((strCh == "F") || (strCh == "f"))
+    {
+        cout << "Delete a post from a blog..." << endl;
+
+        int areaID = getValidBlogArea(areas);
+
+        int postId = getValidPostIndex(areas, areaID);
+
+        DisplayPost(areas, areaID, postId);
+
+        areas->at(areaID).deletePost(postId);
+
+        cout << "Post successfully deleted." << endl;   
     }
     // If user selected Q
     else if ((strCh == "Q") || (strCh == "q"))
@@ -616,11 +637,14 @@ void implementAction(vector<Area> &areas, string strCh)
 
 int main() 
 {
+
     // Array of areas
     vector <Area> areas(NUM_AREAS);
+    //vector  pointer
+    vector <Area> *p = new vector <Area>(NUM_AREAS);
 
     // Initialize areas
-    initAreas(areas);
+    initAreas(p);
 
     // Welcome
     cout << "Welcome to my Blog " << endl;
@@ -631,7 +655,7 @@ int main()
     do 
     {
         promptAction(UserAction);
-        implementAction(areas, UserAction);
+        implementAction(p, UserAction);
 
     } while ((UserAction != "Q") && (UserAction != "q"));
 
