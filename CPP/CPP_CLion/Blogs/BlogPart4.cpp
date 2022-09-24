@@ -215,17 +215,17 @@ string trim(const std::string &s)
 ////////////////////////////////////////
 // Area Init Function
 ////////////////////////////////////////
-void initAreas(vector<Area>& areas)
+void initAreas(vector<Area> &areas)
 {
     // Init Com Sci
     areas[0].setName("Comp Sci");
-    //add a post to the Com Sci area
+    //Add a post to the Com Sci area
     Post p{"I love programming","Programming is so much fun.","Tom"};
     areas[0].AddPost(p);
-    //set description for areas[0]
+    //Set description for areas[0]
     areas[0].setDesc("This Area talks about computers.");
 
-    //add another post to the Com Sci area
+    //Add another post to the Com Sci area
     Post p2;
     p2.setTitle("C++ versus Python");
     p2.setText("I like C++ more than Python.");
@@ -534,7 +534,7 @@ void promptAction(string &strCh)
 }
 
 // Implement Users Action
-void implementAction(vector<Area>& areas, string strCh)
+void implementAction(vector<Area> &areas, string strCh)
 {
     // If user selected A
     if ((strCh == "A") || (strCh == "a"))
