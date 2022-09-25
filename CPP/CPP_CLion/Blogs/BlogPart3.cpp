@@ -11,7 +11,8 @@
  * vectors instead of arrays. Also, there is an addition of ostream and == operation functions.
  * Assumptions: Assumes correct user input.
  * All work below was performed by Ahyeon Cho
- * */
+ *
+ */
 
 //////////////////////////////////////////////////////
 // Table of Content
