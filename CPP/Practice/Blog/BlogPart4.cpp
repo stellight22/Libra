@@ -16,8 +16,6 @@
 // Table of Contents
 //// Program Headers
 //// Global Constants
-//// Classes
-//// Friendly Overloads
 //// String Functions
 //// Area Init Function
 //// Menu Functions
