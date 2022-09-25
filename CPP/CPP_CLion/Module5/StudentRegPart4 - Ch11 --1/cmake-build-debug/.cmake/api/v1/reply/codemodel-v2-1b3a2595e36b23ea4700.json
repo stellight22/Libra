@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "STudentRegStart",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "STudentRegStart::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-STudentRegStart-Debug-ebb9cdd67bfb11e02d76.json",
+					"name" : "STudentRegStart",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/StudentRegPart4 - Ch11 --1/cmake-build-debug",
+		"source" : "/Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/StudentRegPart4 - Ch11 --1"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

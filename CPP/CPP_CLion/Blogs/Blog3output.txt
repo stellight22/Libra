@@ -1,3 +1,5 @@
+cho@linprog8.cs.fsu.edu:~/COP3330/Assignment4>g++ -std=c++11 BlogPart3.cpp
+cho@linprog8.cs.fsu.edu:~/COP3330/Assignment4>./a.out
 Welcome to my Blog 
 
 Please select from the following options...
@@ -366,4 +368,4 @@ Please select from the following options...
 What would you like to do?
 q
 Bye...
-ahyeon@Ahyeons-MacBook-Pro Blogs % 
+cho@linprog8.cs.fsu.edu:~/COP3330/Assignment4>

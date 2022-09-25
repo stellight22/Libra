@@ -35,5 +35,16 @@
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/PrePostfixExample.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/ArrayExample.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/StudentReg3.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/PtrMotivation.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/BasicPointers.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/CallByValue.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/PtrToArray.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/DynamicArrays.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/PtrToArray2.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/StudentRegPart3.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/StudentRegPart4Ch10.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/AssignmentOpExStr.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/TimeExamples.dir
+/Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/dtime.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

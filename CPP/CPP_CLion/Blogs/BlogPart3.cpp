@@ -67,11 +67,11 @@ class Post
         Post(string t, string txt, string u ){Title = t; Text = txt; User = u;};
 
         // Accessor and mutator functions
-        void setTitle(string t)
+        void setTitle(string t) 
         {
             Title = t;
         }
-        string getTitle()
+        string getTitle() const
         {
             return Title;
         }
@@ -79,7 +79,7 @@ class Post
         {
             Text = txt;
         }
-        string getText()
+        string getText() const
         {
             return Text;
         }
@@ -87,7 +87,7 @@ class Post
         {
             User = u;
         }
-        string getUser()
+        string getUser() const
         {
             return User;
         }
@@ -100,7 +100,7 @@ class Area
 {
     private:
         string Name; // Name of Area
-        vector <Post> Posts;// Array of posts
+        vector <Post> Posts;// Vector of posts
         string description;
 
     public:
@@ -129,7 +129,8 @@ class Area
             Name = nm;
         };
 
-        int getPostSize()
+        //Returns the size of the Posts vector
+        int getPostSize() 
         {
             return Posts.size();
         }
@@ -152,6 +153,7 @@ class Area
         {
             if (i < Posts.size()) 
             {
+                //an instance of class Post (p) is set to a Post instance at index(i) within the vector of the post class instances(Posts)
                 p = Posts[i]; 
                 return true; 
             } 
@@ -315,7 +317,7 @@ void displayMenu()
 }
 
 // Display Blog Area
-void DisplayBlogAreas(vector<Area>& areas)
+void DisplayBlogAreas(vector<Area> &areas)
 {
     cout << endl;
     cout << "Display Blog areas..." << endl;
@@ -371,7 +373,7 @@ void DisplayPost(vector<Area>& areas, int areaID, int postID)
 ////////////////////////////////////////
 
 // Area Index Validation
-int getValidBlogArea(vector<Area>& areas)
+int getValidBlogArea(vector<Area> &areas)
 {
     int area;
     // Prompt and read in Blog Area Index
@@ -403,7 +405,7 @@ int getValidPostIndex(vector<Area>& areas, int areaID)
     return post;
 }
 
-bool uniquePostTitle(Area a , Post p)
+bool uniquePostTitle(Area a , Post p)  
 {
     bool flag = false;
     Post tmp;

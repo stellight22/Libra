@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="STudentRegStart" targetName="STudentRegStart" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3f003483-074f-4afa-b820-19be2735b522" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1XUfkE8WCAUrBepZTGTjy6bVASf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Project/GameV5" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+  </component>
+  <component name="RunManager">
+    <configuration name="STudentRegStart" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="STudentRegStart" TARGET_NAME="STudentRegStart" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="STudentRegStart" RUN_TARGET_NAME="STudentRegStart">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f003483-074f-4afa-b820-19be2735b522" name="Default Changelist" comment="" />
+      <created>1581105734642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581105734642</updated>
+      <workItem from="1581105736901" duration="542000" />
+      <workItem from="1581106596771" duration="420000" />
+      <workItem from="1581110521648" duration="812000" />
+      <workItem from="1581116447755" duration="6000" />
+      <workItem from="1581168587491" duration="718000" />
+      <workItem from="1581171239330" duration="75000" />
+      <workItem from="1581183604310" duration="1284000" />
+      <workItem from="1581185607276" duration="1357000" />
+      <workItem from="1581187055689" duration="12000" />
+      <workItem from="1581268612930" duration="2593000" />
+      <workItem from="1581271546449" duration="4834000" />
+      <workItem from="1581276659499" duration="587000" />
+      <workItem from="1581277305423" duration="906000" />
+      <workItem from="1581278782720" duration="1528000" />
+      <workItem from="1581364883074" duration="18000" />
+      <workItem from="1581451627768" duration="884000" />
+      <workItem from="1581452558093" duration="267000" />
+      <workItem from="1581452861795" duration="553000" />
+      <workItem from="1581453458000" duration="4331000" />
+      <workItem from="1581528916750" duration="3000" />
+      <workItem from="1581529652634" duration="37000" />
+      <workItem from="1582389409556" duration="724000" />
+      <workItem from="1582815633672" duration="2608000" />
+      <workItem from="1582823019350" duration="17000" />
+      <workItem from="1582829081866" duration="35000" />
+      <workItem from="1582829661561" duration="2154000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1582829115405">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582829115405" />
+    <state width="1237" height="353" key="GridCell.Tab.0.bottom" timestamp="1582834656180">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="353" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582834656180" />
+    <state width="1237" height="353" key="GridCell.Tab.0.center" timestamp="1582834656180">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="353" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582834656180" />
+    <state width="1237" height="353" key="GridCell.Tab.0.left" timestamp="1582834656180">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="353" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582834656180" />
+    <state width="1237" height="353" key="GridCell.Tab.0.right" timestamp="1582834656180">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="353" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582834656180" />
+  </component>
+</project>

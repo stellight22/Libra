@@ -1184,6 +1184,347 @@ build StudentReg3: CXX_EXECUTABLE_LINKER__StudentReg3_Debug CMakeFiles/StudentRe
   TARGET_FILE = StudentReg3
   TARGET_PDB = StudentReg3.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target PtrMotivation
+
+
+#############################################
+# Order-only phony target for PtrMotivation
+
+build cmake_object_order_depends_target_PtrMotivation: phony || CMakeFiles/PtrMotivation.dir
+
+build CMakeFiles/PtrMotivation.dir/Module5/PtrMotivation.cpp.o: CXX_COMPILER__PtrMotivation_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/PtrMotivation.cpp || cmake_object_order_depends_target_PtrMotivation
+  DEP_FILE = CMakeFiles/PtrMotivation.dir/Module5/PtrMotivation.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/PtrMotivation.dir
+  OBJECT_FILE_DIR = CMakeFiles/PtrMotivation.dir/Module5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target PtrMotivation
+
+
+#############################################
+# Link the executable PtrMotivation
+
+build PtrMotivation: CXX_EXECUTABLE_LINKER__PtrMotivation_Debug CMakeFiles/PtrMotivation.dir/Module5/PtrMotivation.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/PtrMotivation.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = PtrMotivation
+  TARGET_PDB = PtrMotivation.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target BasicPointers
+
+
+#############################################
+# Order-only phony target for BasicPointers
+
+build cmake_object_order_depends_target_BasicPointers: phony || CMakeFiles/BasicPointers.dir
+
+build CMakeFiles/BasicPointers.dir/Module5/BasicPointers.cpp.o: CXX_COMPILER__BasicPointers_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/BasicPointers.cpp || cmake_object_order_depends_target_BasicPointers
+  DEP_FILE = CMakeFiles/BasicPointers.dir/Module5/BasicPointers.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/BasicPointers.dir
+  OBJECT_FILE_DIR = CMakeFiles/BasicPointers.dir/Module5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target BasicPointers
+
+
+#############################################
+# Link the executable BasicPointers
+
+build BasicPointers: CXX_EXECUTABLE_LINKER__BasicPointers_Debug CMakeFiles/BasicPointers.dir/Module5/BasicPointers.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/BasicPointers.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = BasicPointers
+  TARGET_PDB = BasicPointers.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target CallByValue
+
+
+#############################################
+# Order-only phony target for CallByValue
+
+build cmake_object_order_depends_target_CallByValue: phony || CMakeFiles/CallByValue.dir
+
+build CMakeFiles/CallByValue.dir/Module5/CallByValue.cpp.o: CXX_COMPILER__CallByValue_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/CallByValue.cpp || cmake_object_order_depends_target_CallByValue
+  DEP_FILE = CMakeFiles/CallByValue.dir/Module5/CallByValue.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/CallByValue.dir
+  OBJECT_FILE_DIR = CMakeFiles/CallByValue.dir/Module5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CallByValue
+
+
+#############################################
+# Link the executable CallByValue
+
+build CallByValue: CXX_EXECUTABLE_LINKER__CallByValue_Debug CMakeFiles/CallByValue.dir/Module5/CallByValue.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/CallByValue.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = CallByValue
+  TARGET_PDB = CallByValue.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target PtrToArray
+
+
+#############################################
+# Order-only phony target for PtrToArray
+
+build cmake_object_order_depends_target_PtrToArray: phony || CMakeFiles/PtrToArray.dir
+
+build CMakeFiles/PtrToArray.dir/Module5/PtrToArray.cpp.o: CXX_COMPILER__PtrToArray_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/PtrToArray.cpp || cmake_object_order_depends_target_PtrToArray
+  DEP_FILE = CMakeFiles/PtrToArray.dir/Module5/PtrToArray.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/PtrToArray.dir
+  OBJECT_FILE_DIR = CMakeFiles/PtrToArray.dir/Module5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target PtrToArray
+
+
+#############################################
+# Link the executable PtrToArray
+
+build PtrToArray: CXX_EXECUTABLE_LINKER__PtrToArray_Debug CMakeFiles/PtrToArray.dir/Module5/PtrToArray.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/PtrToArray.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = PtrToArray
+  TARGET_PDB = PtrToArray.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target DynamicArrays
+
+
+#############################################
+# Order-only phony target for DynamicArrays
+
+build cmake_object_order_depends_target_DynamicArrays: phony || CMakeFiles/DynamicArrays.dir
+
+build CMakeFiles/DynamicArrays.dir/Module5/DynamicArrays.cpp.o: CXX_COMPILER__DynamicArrays_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/DynamicArrays.cpp || cmake_object_order_depends_target_DynamicArrays
+  DEP_FILE = CMakeFiles/DynamicArrays.dir/Module5/DynamicArrays.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/DynamicArrays.dir
+  OBJECT_FILE_DIR = CMakeFiles/DynamicArrays.dir/Module5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target DynamicArrays
+
+
+#############################################
+# Link the executable DynamicArrays
+
+build DynamicArrays: CXX_EXECUTABLE_LINKER__DynamicArrays_Debug CMakeFiles/DynamicArrays.dir/Module5/DynamicArrays.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/DynamicArrays.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = DynamicArrays
+  TARGET_PDB = DynamicArrays.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target PtrToArray2
+
+
+#############################################
+# Order-only phony target for PtrToArray2
+
+build cmake_object_order_depends_target_PtrToArray2: phony || CMakeFiles/PtrToArray2.dir
+
+build CMakeFiles/PtrToArray2.dir/Module5/PtrToArray2.cpp.o: CXX_COMPILER__PtrToArray2_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/PtrToArray2.cpp || cmake_object_order_depends_target_PtrToArray2
+  DEP_FILE = CMakeFiles/PtrToArray2.dir/Module5/PtrToArray2.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/PtrToArray2.dir
+  OBJECT_FILE_DIR = CMakeFiles/PtrToArray2.dir/Module5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target PtrToArray2
+
+
+#############################################
+# Link the executable PtrToArray2
+
+build PtrToArray2: CXX_EXECUTABLE_LINKER__PtrToArray2_Debug CMakeFiles/PtrToArray2.dir/Module5/PtrToArray2.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/PtrToArray2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = PtrToArray2
+  TARGET_PDB = PtrToArray2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target StudentRegPart3
+
+
+#############################################
+# Order-only phony target for StudentRegPart3
+
+build cmake_object_order_depends_target_StudentRegPart3: phony || CMakeFiles/StudentRegPart3.dir
+
+build CMakeFiles/StudentRegPart3.dir/Module5/StudentRegPart3.cpp.o: CXX_COMPILER__StudentRegPart3_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/StudentRegPart3.cpp || cmake_object_order_depends_target_StudentRegPart3
+  DEP_FILE = CMakeFiles/StudentRegPart3.dir/Module5/StudentRegPart3.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/StudentRegPart3.dir
+  OBJECT_FILE_DIR = CMakeFiles/StudentRegPart3.dir/Module5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target StudentRegPart3
+
+
+#############################################
+# Link the executable StudentRegPart3
+
+build StudentRegPart3: CXX_EXECUTABLE_LINKER__StudentRegPart3_Debug CMakeFiles/StudentRegPart3.dir/Module5/StudentRegPart3.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/StudentRegPart3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = StudentRegPart3
+  TARGET_PDB = StudentRegPart3.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target StudentRegPart4Ch10
+
+
+#############################################
+# Order-only phony target for StudentRegPart4Ch10
+
+build cmake_object_order_depends_target_StudentRegPart4Ch10: phony || CMakeFiles/StudentRegPart4Ch10.dir
+
+build CMakeFiles/StudentRegPart4Ch10.dir/Module5/StudentRegPart4Ch10.cpp.o: CXX_COMPILER__StudentRegPart4Ch10_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/StudentRegPart4Ch10.cpp || cmake_object_order_depends_target_StudentRegPart4Ch10
+  DEP_FILE = CMakeFiles/StudentRegPart4Ch10.dir/Module5/StudentRegPart4Ch10.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/StudentRegPart4Ch10.dir
+  OBJECT_FILE_DIR = CMakeFiles/StudentRegPart4Ch10.dir/Module5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target StudentRegPart4Ch10
+
+
+#############################################
+# Link the executable StudentRegPart4Ch10
+
+build StudentRegPart4Ch10: CXX_EXECUTABLE_LINKER__StudentRegPart4Ch10_Debug CMakeFiles/StudentRegPart4Ch10.dir/Module5/StudentRegPart4Ch10.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/StudentRegPart4Ch10.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = StudentRegPart4Ch10
+  TARGET_PDB = StudentRegPart4Ch10.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target AssignmentOpExStr
+
+
+#############################################
+# Order-only phony target for AssignmentOpExStr
+
+build cmake_object_order_depends_target_AssignmentOpExStr: phony || CMakeFiles/AssignmentOpExStr.dir
+
+build CMakeFiles/AssignmentOpExStr.dir/Module5/AssignmentOpExStr.cpp.o: CXX_COMPILER__AssignmentOpExStr_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/AssignmentOpExStr.cpp || cmake_object_order_depends_target_AssignmentOpExStr
+  DEP_FILE = CMakeFiles/AssignmentOpExStr.dir/Module5/AssignmentOpExStr.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/AssignmentOpExStr.dir
+  OBJECT_FILE_DIR = CMakeFiles/AssignmentOpExStr.dir/Module5
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target AssignmentOpExStr
+
+
+#############################################
+# Link the executable AssignmentOpExStr
+
+build AssignmentOpExStr: CXX_EXECUTABLE_LINKER__AssignmentOpExStr_Debug CMakeFiles/AssignmentOpExStr.dir/Module5/AssignmentOpExStr.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/AssignmentOpExStr.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = AssignmentOpExStr
+  TARGET_PDB = AssignmentOpExStr.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target TimeExamples
+
+
+#############################################
+# Order-only phony target for TimeExamples
+
+build cmake_object_order_depends_target_TimeExamples: phony || CMakeFiles/TimeExamples.dir
+
+build CMakeFiles/TimeExamples.dir/Module5/TimeExamples/TimeExamples.cpp.o: CXX_COMPILER__TimeExamples_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/TimeExamples/TimeExamples.cpp || cmake_object_order_depends_target_TimeExamples
+  DEP_FILE = CMakeFiles/TimeExamples.dir/Module5/TimeExamples/TimeExamples.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/TimeExamples.dir
+  OBJECT_FILE_DIR = CMakeFiles/TimeExamples.dir/Module5/TimeExamples
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target TimeExamples
+
+
+#############################################
+# Link the executable TimeExamples
+
+build TimeExamples: CXX_EXECUTABLE_LINKER__TimeExamples_Debug CMakeFiles/TimeExamples.dir/Module5/TimeExamples/TimeExamples.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/TimeExamples.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = TimeExamples
+  TARGET_PDB = TimeExamples.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target dtime
+
+
+#############################################
+# Order-only phony target for dtime
+
+build cmake_object_order_depends_target_dtime: phony || CMakeFiles/dtime.dir
+
+build CMakeFiles/dtime.dir/Module5/TimeExamples/dtime.cpp.o: CXX_COMPILER__dtime_Debug /Users/ahyeon/Github/Libra/CPP/CPP_CLion/Module5/TimeExamples/dtime.cpp || cmake_object_order_depends_target_dtime
+  DEP_FILE = CMakeFiles/dtime.dir/Module5/TimeExamples/dtime.cpp.o.d
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++11
+  OBJECT_DIR = CMakeFiles/dtime.dir
+  OBJECT_FILE_DIR = CMakeFiles/dtime.dir/Module5/TimeExamples
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target dtime
+
+
+#############################################
+# Link the executable dtime
+
+build dtime: CXX_EXECUTABLE_LINKER__dtime_Debug CMakeFiles/dtime.dir/Module5/TimeExamples/dtime.cpp.o
+  FLAGS = -g -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/dtime.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = dtime
+  TARGET_PDB = dtime.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -1218,7 +1559,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/ahyeon/Github/Libra/CPP/CPP_CLion/cmake-build-debug
 
-build all: phony CLion NoArray SimpleArray SimpleArrayVer2 FunctionsArrays Search Sorting CommonErrorsArrays MotivationStructure Structures StructurePractice CommonErrorsStructs MotivationClasses BasicClass ClassesPractice OOPClasses StudentRegStart StringValidation ClassConstructors ClassMemberVariable ConstParam InlineFunc Constructors StaticMembers Vector Bubby StudentReg2 OperatorOverloading OperatorOverloading1 NotMemberFunctions MemberFunctions FriendsExample FriendClass FriendsExample2 PrePostfixExample ArrayExample StudentReg3
+build all: phony CLion NoArray SimpleArray SimpleArrayVer2 FunctionsArrays Search Sorting CommonErrorsArrays MotivationStructure Structures StructurePractice CommonErrorsStructs MotivationClasses BasicClass ClassesPractice OOPClasses StudentRegStart StringValidation ClassConstructors ClassMemberVariable ConstParam InlineFunc Constructors StaticMembers Vector Bubby StudentReg2 OperatorOverloading OperatorOverloading1 NotMemberFunctions MemberFunctions FriendsExample FriendClass FriendsExample2 PrePostfixExample ArrayExample StudentReg3 PtrMotivation BasicPointers CallByValue PtrToArray DynamicArrays PtrToArray2 StudentRegPart3 StudentRegPart4Ch10 AssignmentOpExStr TimeExamples dtime
 
 # =============================================================================
 # Built-in targets
