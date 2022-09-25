@@ -1,0 +1,5 @@
+# ninja log v5
+0	760	1664063224084501386	CMakeFiles/STudentRegStart.dir/Course.cpp.o	88b1cd49988d556b
+1	770	1664063224097155212	CMakeFiles/STudentRegStart.dir/Student.cpp.o	73912a5f3a6ddf75
+0	804	1664063224132131263	CMakeFiles/STudentRegStart.dir/main.cpp.o	12ad580fdc1fe64a
+804	890	1664063224219888761	STudentRegStart	c058b045b129dda1

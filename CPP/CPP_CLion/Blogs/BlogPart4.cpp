@@ -13,7 +13,7 @@
  * */
 
 //////////////////////////////////////////////////////
-// Table of Content
+// Table of Contents
 //// Program Headers
 //// Global Constants
 //// Classes
@@ -49,7 +49,7 @@ const std::string WHITESPACE = " \n\r\t\f\v";
 
 
 //////////////////////////////////////////////////////
-// Classes
+// Class Post 
 //////////////////////////////////////////////////////
 
 class Post
@@ -62,37 +62,101 @@ class Post
     public:
         // Constructor
         Post(){ };
-        Post(string t, string txt, string u ){this->Title = t; this->Text = txt; this->User = u;};
+        Post(string t, string txt, string u );
 
-        // Accessor and mutator functions
-        void setTitle(string t) 
-        {
-            this->Title = t;
-        }
-        string getTitle() const
-        {
-            return this->Title;
-        }
-        void setText(string txt)
-        {
-            this->Text = txt;
-        }
-        string getText() const
-        {
-            return this->Text;
-        }
-        void setUser(string u)
-        {
-            this->User = u;
-        }
-        string getUser() const
-        {
-            return this->User;
-        }
+        // Mutator function for Title 
+        void setTitle(string t);
 
+        //Accessor function for title
+        string getTitle() const;
+
+        //Mutator function for text
+        void setText(string txt);
+
+        //Accessor function for text
+        string getText() const;
+
+        //Mutator function for user
+        void setUser(string u);
+
+        //Accessor function for user
+        string getUser() const;
+
+        //Will print the post information when interacted with Post class instance
         friend ostream& operator <<(ostream &outputStream, const Post &p);
+
+        //Will be used to compare 2 post objects
         friend bool operator ==(const Post &otherPost1, const Post &otherPost2);
 };
+
+//////////////////////////////////////////////////////
+// Class Post Function Definition
+//////////////////////////////////////////////////////
+Post::Post(string t, string txt, string u )
+{
+    this->Title = t; 
+    this->Text = txt; 
+    this->User = u;
+}
+
+//Mutator function for Title
+void Post::setTitle(string t) 
+{
+    this->Title = t;
+}
+
+//Accessor function for Title
+string Post::getTitle() const
+{
+    return this->Title;
+}
+
+//Mutator function for text
+void Post::setText(string txt)
+{
+    this->Text = txt;
+}
+
+//Accessor function for text
+string Post::getText() const
+{
+    return this->Text;
+}
+
+//Mutator function for user
+void Post::setUser(string u)
+{
+    this->User = u;
+}
+
+//Accessor function for user
+string Post::getUser() const
+{
+    return this->User;
+}
+
+// Post Overloads
+
+//Will print the post information when interacted with Post class instance
+ostream& operator <<(ostream &outputStream, const Post &p)
+{
+    outputStream<<"Title : "<<p.Title<<endl;
+    outputStream<<"By : "<<p.User<<endl;
+    outputStream<<"Text : "<<p.Text<<endl;
+    return outputStream;
+}
+
+//Will be used to compare 2 post objects
+bool operator ==(const Post &otherPost1, const Post &otherPost2)
+{
+    return otherPost1.Title == otherPost2.Title;
+}
+
+
+
+//////////////////////////////////////////////////////
+// Class Area 
+//////////////////////////////////////////////////////
 
 class Area
 {
@@ -103,90 +167,108 @@ class Area
 
     public:
         // Return the name of the Area
-        string getName() const 
-        {
-            return this->Name;
-        };
+        string getName() const;
 
-        // Adding accessor and mutator methods for description
-        // Set the description of Area
-        void setDesc(string d)
-        {
-            this->description = d;
-        };
+        //Mutator function for description
+        void setDesc(string d);
 
-        // Return the name of the Area description
-        string getDesc() const
-        {
-            return this->description;
-        };
+        //Accessor function for description
+        string getDesc() const;
 
-        // Set the name of the Area
-        void setName(string nm)
-        {
-            this->Name = nm;
-        };
+        //Mutator function for name
+        void setName(string nm);
+
         //Returns the size of the Posts vector
-        int getPostSize() const
-        {
-            return this->Posts.size();
-        }
+        int getPostSize() const;
 
-        // Add post
-        void AddPost(Post p)
-        {
-           this->Posts.push_back(p);
-        }
+        // Add post function
+        void AddPost(Post p);
 
-        //Delte post
-        void deletePost(int index)
-        {
-            this->Posts.erase(Posts.begin()+index);
-        }
+        //Delte post function
+        void deletePost(int index);
 
-        void EditPost(int postId, string title, string text, string user)
-        {
-            this->Posts[postId].setTitle(title);
-            this->Posts[postId].setText(text);
-            this->Posts[postId].setUser(user);
-        }
+        //edit post function
+        void EditPost(int postId, string title, string text, string user);
 
-        // Get post
-        bool getPost(int i, Post &p) const
-        {
-            if (i < this->Posts.size()) 
-            {
-                //an instance of class Post (p) is set to a Post instance at index(i) within the vector of the post class instances(Posts)
-                p = this->Posts[i]; 
-                return true; 
-            } 
-            else
-            { 
-                return false; 
-            }
-        }
+        // Get post function
+        bool getPost(int i, Post &p) const;
 
+        //Will print out area name and description when interacting with instance of Area
         friend ostream& operator <<(ostream &outputStream, const Area &area);
 };
 
-////////////////////////////////////////
-// Friendly Overloads
-////////////////////////////////////////
+//////////////////////////////////////////////////////
+// Class Post Function Definition
+//////////////////////////////////////////////////////
 
-// Post Overloads
-ostream& operator <<(ostream &outputStream, const Post &p)
+// Return the name of the Area
+string Area::getName() const 
 {
-    outputStream<<"Title : "<<p.Title<<endl;
-    outputStream<<"By : "<<p.User<<endl;
-    outputStream<<"Text : "<<p.Text<<endl;
-    return outputStream;
+    return this->Name;
 }
-bool operator ==(const Post &otherPost1, const Post &otherPost2)
+
+//Mutator function for description
+void Area::setDesc(string d)
 {
-    return otherPost1.Title == otherPost2.Title;
+    this->description = d;
+}
+
+//Accessor function for description
+string Area::getDesc() const
+{
+    return this->description;
+}
+
+//Mutator function for name
+void Area::setName(string nm)
+{
+    this->Name = nm;
+}
+
+//Returns the size of the Posts vector
+int Area::getPostSize() const
+{
+    return this->Posts.size();
+}
+
+// Add post function
+void Area::AddPost(Post p)
+{
+    this->Posts.push_back(p);
+}
+
+//Delte post function
+void Area::deletePost(int index)
+{
+    this->Posts.erase(Posts.begin()+index);
+}
+
+//edit post function
+void Area::EditPost(int postId, string title, string text, string user)
+{
+    this->Posts[postId].setTitle(title);
+    this->Posts[postId].setText(text);
+    this->Posts[postId].setUser(user);
+}
+
+// Get post function
+bool Area::getPost(int i, Post &p) const
+{
+    if (i < this->Posts.size()) 
+    {
+        //an instance of class Post (p) is set to a Post instance at index(i) within the vector of the post class instances(Posts)
+        p = this->Posts[i]; 
+        return true; 
+    } 
+    else
+    { 
+        return false; 
+    }
 }
 
 // Area Overloads
+
+//Will print out area name and description when interacting with instance of Area
 ostream& operator <<(ostream &outputStream, const Area &area)
 {
     outputStream<<"Area Name : "<<area.Name<<endl;
@@ -629,7 +711,6 @@ void implementAction(vector<Area> *areas, string strCh)
         cout << strCh << " is not a valid option." << endl;
     }
 }
-
 
 ////////////////////////////////////////
 //Main
