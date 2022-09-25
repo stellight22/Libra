@@ -42,7 +42,7 @@ int main()
     // cout << &arr2 <<endl;
 
     //vectors
-
+    //new operator 
     vector <int> *p = new vector <int>(6, 8);
     cout << p << endl;
     cout << p->at(0)<< endl;

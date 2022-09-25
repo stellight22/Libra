@@ -17,7 +17,6 @@
 //// Program Headers
 //// Global Constants
 //// Classes
-//// Friendly Overloads
 //// String Functions
 //// Area Init Function
 //// Menu Functions
@@ -33,6 +32,9 @@
 #include <string>
 #include <vector>
 
+#include "Post.h"
+#include "Area.h"
+
 
 using namespace std;
 
@@ -45,236 +47,6 @@ const int NUM_AREAS = 5;
 
 // Whitespace constants
 const std::string WHITESPACE = " \n\r\t\f\v";
-
-
-
-//////////////////////////////////////////////////////
-// Class Post 
-//////////////////////////////////////////////////////
-
-class Post
-{
-    private:
-        string Title; // Title
-        string Text; // Text
-        string User; // User
-
-    public:
-        // Constructor
-        Post(){ };
-        Post(string t, string txt, string u );
-
-        // Mutator function for Title 
-        void setTitle(string t);
-
-        //Accessor function for title
-        string getTitle() const;
-
-        //Mutator function for text
-        void setText(string txt);
-
-        //Accessor function for text
-        string getText() const;
-
-        //Mutator function for user
-        void setUser(string u);
-
-        //Accessor function for user
-        string getUser() const;
-
-        //Will print the post information when interacted with Post class instance
-        friend ostream& operator <<(ostream &outputStream, const Post &p);
-
-        //Will be used to compare 2 post objects
-        friend bool operator ==(const Post &otherPost1, const Post &otherPost2);
-};
-
-//////////////////////////////////////////////////////
-// Class Post Function Definition
-//////////////////////////////////////////////////////
-Post::Post(string t, string txt, string u )
-{
-    this->Title = t; 
-    this->Text = txt; 
-    this->User = u;
-}
-
-//Mutator function for Title
-void Post::setTitle(string t) 
-{
-    this->Title = t;
-}
-
-//Accessor function for Title
-string Post::getTitle() const
-{
-    return this->Title;
-}
-
-//Mutator function for text
-void Post::setText(string txt)
-{
-    this->Text = txt;
-}
-
-//Accessor function for text
-string Post::getText() const
-{
-    return this->Text;
-}
-
-//Mutator function for user
-void Post::setUser(string u)
-{
-    this->User = u;
-}
-
-//Accessor function for user
-string Post::getUser() const
-{
-    return this->User;
-}
-
-// Post Overloads
-
-//Will print the post information when interacted with Post class instance
-ostream& operator <<(ostream &outputStream, const Post &p)
-{
-    outputStream<<"Title : "<<p.Title<<endl;
-    outputStream<<"By : "<<p.User<<endl;
-    outputStream<<"Text : "<<p.Text<<endl;
-    return outputStream;
-}
-
-//Will be used to compare 2 post objects
-bool operator ==(const Post &otherPost1, const Post &otherPost2)
-{
-    return otherPost1.Title == otherPost2.Title;
-}
-
-
-
-//////////////////////////////////////////////////////
-// Class Area 
-//////////////////////////////////////////////////////
-
-class Area
-{
-    private:
-        string Name; // Name of Area
-        vector <Post> Posts;// Vector of posts
-        string description;
-
-    public:
-        // Return the name of the Area
-        string getName() const;
-
-        //Mutator function for description
-        void setDesc(string d);
-
-        //Accessor function for description
-        string getDesc() const;
-
-        //Mutator function for name
-        void setName(string nm);
-
-        //Returns the size of the Posts vector
-        int getPostSize() const;
-
-        // Add post function
-        void AddPost(Post p);
-
-        //Delte post function
-        void deletePost(int index);
-
-        //edit post function
-        void EditPost(int postId, string title, string text, string user);
-
-        // Get post function
-        bool getPost(int i, Post &p) const;
-
-        //Will print out area name and description when interacting with instance of Area
-        friend ostream& operator <<(ostream &outputStream, const Area &area);
-};
-
-//////////////////////////////////////////////////////
-// Class Post Function Definition
-//////////////////////////////////////////////////////
-
-// Return the name of the Area
-string Area::getName() const 
-{
-    return this->Name;
-}
-
-//Mutator function for description
-void Area::setDesc(string d)
-{
-    this->description = d;
-}
-
-//Accessor function for description
-string Area::getDesc() const
-{
-    return this->description;
-}
-
-//Mutator function for name
-void Area::setName(string nm)
-{
-    this->Name = nm;
-}
-
-//Returns the size of the Posts vector
-int Area::getPostSize() const
-{
-    return this->Posts.size();
-}
-
-// Add post function
-void Area::AddPost(Post p)
-{
-    this->Posts.push_back(p);
-}
-
-//Delte post function
-void Area::deletePost(int index)
-{
-    this->Posts.erase(Posts.begin()+index);
-}
-
-//edit post function
-void Area::EditPost(int postId, string title, string text, string user)
-{
-    this->Posts[postId].setTitle(title);
-    this->Posts[postId].setText(text);
-    this->Posts[postId].setUser(user);
-}
-
-// Get post function
-bool Area::getPost(int i, Post &p) const
-{
-    if (i < this->Posts.size()) 
-    {
-        //an instance of class Post (p) is set to a Post instance at index(i) within the vector of the post class instances(Posts)
-        p = this->Posts[i]; 
-        return true; 
-    } 
-    else
-    { 
-        return false; 
-    }
-}
-
-// Area Overloads
-
-//Will print out area name and description when interacting with instance of Area
-ostream& operator <<(ostream &outputStream, const Area &area)
-{
-    outputStream<<"Area Name : "<<area.Name<<endl;
-    outputStream<<"Area Description : "<<area.description<<endl;
-    return outputStream;
-}
 
 
 ////////////////////////////////////////
@@ -718,9 +490,8 @@ void implementAction(vector<Area> *areas, string strCh)
 
 int main() 
 {
-
     // Array of areas
-    vector <Area> areas(NUM_AREAS);
+    //vector <Area> areas(NUM_AREAS);
     //vector  pointer
     vector <Area> *p = new vector <Area>(NUM_AREAS);
 
