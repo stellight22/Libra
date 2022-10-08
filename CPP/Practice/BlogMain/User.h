@@ -10,11 +10,12 @@ using namespace std;
 class User
 {
     private:
-        string name = "Akhil"; // Name of User
-        string alias = "Eggy"; // Alias of User
-        string password = "Booty69"; // User Password
+        string name; // Name of User
+        string alias; // Alias of User
+        string password; // User Password
 
     public:
+        User(); 
         // Retrieves User's Name
         string getName() const;
 

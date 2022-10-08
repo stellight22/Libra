@@ -1,0 +1,80 @@
+5
+Area Index : 0
+Area Name : Comp Sci
+Area Description : This Area talks about computers.
+
+******************
+Post Index : 0
+Title : I love programming
+By : Tom
+Text : Programming is so much fun.
+
+******************
+Post Index : 1
+Title : C++ versus Python
+By : Sally
+Text : I like C++ more than Python.
+
+******************
+Area Index : 1
+Area Name : Current Events
+Area Description : This Area talks about the latest community news.
+
+******************
+Post Index : 0
+Title : Picnic Saturday
+By : Sue
+Text : Join us at the park for a picnic on Saturday
+
+******************
+Area Index : 2
+Area Name : Foodie Updates
+Area Description : This Area is made for the food enthusiasts.
+
+******************
+Post Index : 0
+Title : Chocolate Shortage
+By : Choco-lover
+Text : Chocolate is in danger of extinction.
+
+******************
+Post Index : 1
+Title : Paleo Diet
+By : Sushi-lover
+Text : Eat lots of fish.
+
+******************
+Area Index : 3
+Area Name : Travel Updates
+Area Description : This Area is made for the travel enthusiasts.
+
+******************
+Post Index : 0
+Title : COVID is OVER
+By : iloveparis
+Text : Travel without masks!
+
+******************
+Post Index : 1
+Title : Portuguese Summer
+By : miamor
+Text : Lots of group travel deals inside.
+
+******************
+Area Index : 4
+Area Name : Friends Updates
+Area Description : This Area is made for the fans of the show Friends.
+
+******************
+Post Index : 0
+Title : Stayed at home
+By : Eggy
+Text : went to the park
+
+******************
+Post Index : 1
+Title : Home
+By : Eggy
+Text : Stayed Home
+
+******************

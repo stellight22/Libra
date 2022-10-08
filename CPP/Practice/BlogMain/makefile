@@ -14,5 +14,5 @@ BlogPart5.o: BlogPart5.cpp
 	g++ -c BlogPart5.cpp
 
 clean:
-	del .\*.o .\eggy.exe
+	rm *.o eggy
 	

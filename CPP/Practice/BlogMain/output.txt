@@ -1,0 +1,568 @@
+
+cho@linprog7.cs.fsu.edu:~/COP3330/Assignment6> make
+g++ -c User.cpp
+g++ -c Post.cpp
+g++ -c Area.cpp
+g++ -c BlogPart5.cpp
+g++ -std=c++11 User.o Post.o Area.o BlogPart5.o -o eggy
+cho@linprog7.cs.fsu.edu:~/COP3330/Assignment6> eggy
+Login:
+Name: Please enter in a string with at least 1 character and at most 10 characters.
+Ahyeon2
+Password: Please enter in a string with at least 1 character and at most 20 characters.
+Bread
+
+Welcome to my Blog
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+a
+Display blog areas...
+
+Area Index : 0
+Area Name : Comp Sci
+Area Description : This Area talks about computers.
+******************
+
+Area Index : 1
+Area Name : Current Events
+Area Description : This Area talks about the latest community news.
+******************
+
+Area Index : 2
+Area Name : Foodie Updates
+Area Description : This Area is made for the food enthusiasts.
+******************
+
+Area Index : 3
+Area Name : Travel Updates
+Area Description : This Area is made for the travel enthusiasts.
+******************
+
+Area Index : 4
+Area Name : Friends Updates
+Area Description : This Area is made for the fans of the show Friends.
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+0
+
+Posts for Comp Sci
+Post Index : 0
+Title : I love programming
+By : Tom
+Text : Programming is so much fun.
+
+******************
+Post Index : 1
+Title : C++ versus Python
+By : Sally
+Text : I like C++ more than Python.
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+1
+
+Posts for Current Events
+Post Index : 0
+Title : Picnic Saturday
+By : Sue
+Text : Join us at the park for a picnic on Saturday
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+2
+
+Posts for Foodie Updates
+Post Index : 0
+Title : Chocolate Shortage
+By : Choco-lover
+Text : Chocolate is in danger of extinction.
+
+******************
+Post Index : 1
+Title : Paleo Diet
+By : Sushi-lover
+Text : Eat lots of fish.
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+3
+
+Posts for Travel Updates
+Post Index : 0
+Title : COVID is OVER
+By : iloveparis
+Text : Travel without masks!
+
+******************
+Post Index : 1
+Title : Portuguese Summer
+By : miamor
+Text : Lots of group travel deals inside.
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+4
+
+Posts for Friends Updates
+Post Index : 0
+Title : Stayed at Home
+By : Eggy
+Text : went to the park
+
+******************
+Post Index : 1
+Title : Home
+By : Eggy
+Text : Stayed Home
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+c
+Add a post to a blog...
+Please enter in a Blog Area Index
+4
+Please enter in a Post Title
+Title must contain at least 1 non white space character and at most 20 non white space characters
+Home
+Another post in this blog has an identical title..
+Please create a new unique title..
+Please enter in the title...
+Title must contain at least 1 non white space character and at most 20 non white space characters
+Stayed Home
+Please enter in the text ...
+Text must contain at least 1 non white space character and at most 500 non white space characters
+b
+Post successfully added.
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+4
+4 is not a valid option.
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+e
+Edit a post for a blog...
+Please enter in a Blog Area Index
+4
+Please enter in a Post Index
+1
+
+Post Index : 1
+Title : Home
+By : Eggy
+Text : Stayed Home
+
+******************
+Please enter in a Post Title
+Title must contain at least 1 non white space character and at most 20 non white space characters
+Stayed at home
+Please enter in the text ...
+Text must contain at least 1 non white space character and at most 500 non white space characters
+went to the park
+Post Editted.
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+4
+
+Posts for Friends Updates
+Post Index : 0
+Title : Stayed at Home
+By : Eggy
+Text : went to the park
+
+******************
+Post Index : 1
+Title : Stayed at home
+By : Eggy
+Text : went to the park
+
+******************
+Post Index : 2
+Title : Stayed Home
+By : Eggy
+Text : b
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+f
+Delete a post from a blog...
+Please enter in a Blog Area Index
+4
+Please enter in a Post Index
+0
+
+Post Index : 0
+Title : Stayed at Home
+By : Eggy
+Text : went to the park
+
+******************
+Post Deleted.
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+4
+
+Posts for Friends Updates
+Post Index : 0
+Title : Stayed at home
+By : Eggy
+Text : went to the park
+
+******************
+Post Index : 1
+Title : Stayed Home
+By : Eggy
+Text : b
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+q
+Bye...
+End of appending to file.
+cho@linprog7.cs.fsu.edu:~/COP3330/Assignment6> Ahyeon2
+Ahyeon2: Command not found.
+cho@linprog7.cs.fsu.edu:~/COP3330/Assignment6> eggy
+Login:
+Name: Please enter in a string with at least 1 character and at most 10 characters.
+Ahyeon2
+Password: Please enter in a string with at least 1 character and at most 20 characters.
+Bread
+
+Welcome to my Blog
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+a
+Display blog areas...
+
+Area Index : 0
+Area Name : Comp Sci
+Area Description : This Area talks about computers.
+******************
+
+Area Index : 1
+Area Name : Current Events
+Area Description : This Area talks about the latest community news.
+******************
+
+Area Index : 2
+Area Name : Foodie Updates
+Area Description : This Area is made for the food enthusiasts.
+******************
+
+Area Index : 3
+Area Name : Travel Updates
+Area Description : This Area is made for the travel enthusiasts.
+******************
+
+Area Index : 4
+Area Name : Friends Updates
+Area Description : This Area is made for the fans of the show Friends.
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+0
+
+Posts for Comp Sci
+Post Index : 0
+Title : I love programming
+By : Tom
+Text : Programming is so much fun.
+
+******************
+Post Index : 1
+Title : C++ versus Python
+By : Sally
+Text : I like C++ more than Python.
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+1
+
+Posts for Current Events
+Post Index : 0
+Title : Picnic Saturday
+By : Sue
+Text : Join us at the park for a picnic on Saturday
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+2
+
+Posts for Foodie Updates
+Post Index : 0
+Title : Chocolate Shortage
+By : Choco-lover
+Text : Chocolate is in danger of extinction.
+
+******************
+Post Index : 1
+Title : Paleo Diet
+By : Sushi-lover
+Text : Eat lots of fish.
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+3
+
+Posts for Travel Updates
+Post Index : 0
+Title : COVID is OVER
+By : iloveparis
+Text : Travel without masks!
+
+******************
+Post Index : 1
+Title : Portuguese Summer
+By : miamor
+Text : Lots of group travel deals inside.
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+b
+Display all posts for a blog...
+Please enter in a Blog Area Index
+4
+
+Posts for Friends Updates
+Post Index : 0
+Title : Stayed at home
+By : Eggy
+Text : went to the park
+
+******************
+Post Index : 1
+Title : Stayed Home
+By : Eggy
+Text : b
+
+******************
+
+Please select from the following options...
+ A - Display Blog areas
+ B - Display all posts for a blog
+ C - Add a post to an area
+ D - Display a post for a blog
+ E - Edit a post for a blog
+ F - Delete a post from a blog
+ Q - Quit
+
+What would you like to do?
+q
+Bye...
+End of appending to file.
+cho@linprog7.cs.fsu.edu:~/COP3330/Assignment6>

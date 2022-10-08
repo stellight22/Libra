@@ -6,6 +6,13 @@
 
 using namespace std;
 
+User::User()
+{
+    name = "Ahyeon2";
+    alias = "Eggy";
+    password = "Bread";
+}
+
 // Retrieves User's Name
 string User::getName() const 
 {

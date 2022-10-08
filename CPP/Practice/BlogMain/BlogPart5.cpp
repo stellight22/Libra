@@ -3,12 +3,12 @@
 //////////////////////////////////////////////////////
 /*
  * Name: Ahyeon Cho
- * Date: //2022
+ * Date: 10/05/2022
  * Section: COP3330-11
  * Assignment: Module 6 Assignment
- * Due Date: //2022
- * About this project: 
- * Assumptions: 
+ * Due Date: 10/05/2022
+ * About this project: This project implements file IO
+ * Assumptions: Assumes correct user input
  * All work below was performed by Ahyeon Cho
  * */
 
@@ -19,9 +19,10 @@
 //// Classes
 //// Friendly Overloads
 //// String Functions
-//// Area Init Function
 //// Menu Functions
 //// Validation Functions
+//// Data Upload
+//// Data Offload
 //// User Action Functions
 //////// Main
 //////////////////////////////////////////////////////
@@ -32,6 +33,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
 
 #include "Area.h"
 #include "Post.h"
@@ -73,87 +75,6 @@ string trim(const std::string &s)
     return rtrim(ltrim(s));
 }
 
-////////////////////////////////////////
-// Area Init Function
-////////////////////////////////////////
-void initAreas(vector<Area> *areas)
-{
-    // Init Com Sci
-    areas->at(0).setName("Comp Sci");
-    //Add a post to the Com Sci area
-    Post p{"I love programming","Programming is so much fun.","Tom"};
-    areas->at(0).AddPost(p);
-    //Set description for areas[0]
-    areas->at(0).setDesc("This Area talks about computers.");
-
-    //Add another post to the Com Sci area
-    Post p2;
-    p2.setTitle("C++ versus Python");
-    p2.setText("I like C++ more than Python.");
-    p2.setUser("Sally");
-    areas->at(0).AddPost(p2);
-
-    //init Current Events
-    areas->at(1).setName("Current Events");
-    //add a post to the Current Events area
-    Post p3{"Picnic Saturday","Join us at the park for a picnic on Saturday","Sue"};
-    areas->at(1).AddPost(p3);
-    //set description for areas[1]
-    areas->at(1).setDesc("This Area talks about the latest community news.");
-
-    //add 3 more areas and 2 posts to each
-    //init foodie
-    areas->at(2).setName("Foodie Updates");
-    //set description for areas[2]
-    areas->at(2).setDesc("This Area is made for the food enthusiasts.");
-    //first post for Foodie area
-    Post p5;
-    p5.setTitle("Chocolate Shortage");
-    p5.setText("Chocolate is in danger of extinction.");
-    p5.setUser("Choco-lover");
-    areas->at(2).AddPost(p5);
-    //second post for Foodie area, which is areas[2]
-    Post p6;
-    p6.setTitle("Paleo Diet");
-    p6.setText("Eat lots of fish.");
-    p6.setUser("Sushi-lover");
-    areas->at(2).AddPost(p6);
-
-    //init travel
-    areas->at(3).setName("Travel Updates");
-    //sets the description for the travel area
-    areas->at(3).setDesc("This Area is made for the travel enthusiasts.");
-    //first post for travel area
-    Post p7;
-    p7.setTitle("COVID is OVER");
-    p7.setText("Travel without masks!");
-    p7.setUser("iloveparis");
-    areas->at(3).AddPost(p7);
-    //second post for travel area, which is areas[3]
-    Post p8;
-    p8.setTitle("Portuguese Summer");
-    p8.setText("Lots of group travel deals inside.");
-    p8.setUser("miamor");
-    areas->at(3).AddPost(p8);
-
-    //init friends
-    areas->at(4).setName("Friends Updates");
-    //sets the description for the Friends area
-    areas->at(4).setDesc("This Area is made for the fans of the show Friends.");
-    //first post for travel area
-    Post p9;
-    p9.setTitle("Ross is Back");
-    p9.setText("PIVOT!!");
-    p9.setUser("Monica");
-    areas->at(4).AddPost(p9);
-    //second post for Foodie area, which is areas[2]
-    Post p10;
-    p10.setTitle("Joey is hitched!");
-    p10.setText("Just kidding. How you doin'?");
-    p10.setUser("pizzaLover");
-    areas->at(4).AddPost(p10);
-
-}
 
 ////////////////////////////////////////
 // Menu Functions
@@ -177,12 +98,12 @@ void displayMenu()
 // Display Blog Area
 void DisplayBlogAreas(vector<Area> *areas)
 {
-    cout << endl;
-    cout << "Display Blog areas..." << endl;
     //user has selected to display blog areas
-    for (int i = 0; i < areas->size(); i++) {
+    for (int i = 0; i < areas->size(); i++) 
+    {
+        cout << endl;
         cout << "Area Index : " << i << endl;
-        cout << areas->at(i) << endl;
+        cout << areas->at(i);
         cout << "******************" << endl;
    
     }
@@ -377,8 +298,104 @@ string getValidText()
     // Return valid Blog Area Index
     return text;
 }
+////////////////////////////////////////
+// Data Upload
+////////////////////////////////////////
+void uploadData(vector <Area> *p)
+{
+    vector<string> data;
+    string line;
+  
+    ifstream filein ("Data.txt");
+  
+    if (filein.is_open())
+    {
+        while ( getline(filein,line) )
+        {
+            data.push_back(line);
+        }
+        filein.close();
+    }
+    else
+    {
+        cout << "Unable to open file"; 
+    } 
+
+    int counter = -1;
+    Post tpost;
+
+    for( int i=0; i < data.size(); i++)
+    {
+        if(data[i].find("Area Index :") != string::npos)
+        {
+            counter++;
+        }
+        else if(data[i].find("Area Name :") != string::npos)
+        {
+            p->at(counter).setName(data[i].substr(data[i].find_first_of(":") + 2, data[i].length()));
+        }
+        else if(data[i].find("Area Description :") != string::npos)
+        {
+            p->at(counter).setDesc(data[i].substr(data[i].find_first_of(":") + 2, data[i].length()));
+        }
+        else if(data[i].find("Title : ") != string::npos)
+        {
+            tpost.setTitle(data[i].substr(data[i].find_first_of(":") + 2, data[i].length()));
+        }
+        else if(data[i].find("By : ") != string::npos)
+        {
+            tpost.setUser(data[i].substr(data[i].find_first_of(":") + 2, data[i].length()));
+        }
+        else if(data[i].find("Text : ") != string::npos)
+        {
+            tpost.setText(data[i].substr(data[i].find_first_of(":") + 2, data[i].length()));
+            p->at(counter).AddPost(tpost);
+        }
+    }
+}
+
+////////////////////////////////////////
+// Data Offload
+////////////////////////////////////////
+void backupData(vector<Area> *areas)
+{
+    ofstream fileout;
+        
+    fileout.open("Data.txt", ios::trunc);
+
+    if (fileout.is_open())
+    {
+        fileout << areas->size() << endl;
+
+        for (int i = 0; i < areas->size(); i++) 
+        {
+            fileout << "Area Index : " << i << endl;
+            fileout << areas->at(i) << endl;
+            fileout << "******************" << endl;
+
+            for (int j = 0; j < areas->at(i).getPostSize(); j++) 
+            {
+                Post p;
+                bool found = areas->at(i).getPost(j, p);
+                if (found) {
+                    fileout << "Post Index : " << j << endl;
+                    fileout << p << endl;
+                    fileout << "******************" << endl;
+                }
+            }
+        }
 
 
+    }
+    else 
+    {
+        cout << "Unable to open file";
+    }
+
+    fileout.close( );
+
+    cout << "End of appending to file.\n";
+}
 ////////////////////////////////////////
 // User Action Functions
 ////////////////////////////////////////
@@ -456,7 +473,7 @@ void implementAction(vector<Area> *areas, User user, string strCh)
 
         areas->at(areaID).EditPost(postId, temp.getTitle(), temp.getText(), temp.getUser());
         //areas[areaID].EditPost(postId, getValidPostTitle(), getValidUsername(), getValidText());
-        cout << "Post successfully editted." << endl;   
+        cout << "Post Editted." << endl;   
     }
     else if ((strCh == "F") || (strCh == "f"))
     {
@@ -470,13 +487,16 @@ void implementAction(vector<Area> *areas, User user, string strCh)
 
         areas->at(areaID).deletePost(postId);
 
-        cout << "Post successfully deleted." << endl;   
+        cout << "Post Deleted." << endl;   
     }
     // If user selected Q
     else if ((strCh == "Q") || (strCh == "q"))
     {
         // User has selected to quit
         cout << "Bye..." << endl;
+
+        backupData(areas);
+
     }
         // User has selected an invalid option
     else
@@ -491,6 +511,7 @@ void implementAction(vector<Area> *areas, User user, string strCh)
 
 int main() 
 {
+    // Login Sequence
     User user;
     bool flag = false;
 
@@ -503,8 +524,6 @@ int main()
         getline(cin,u);
         cout << "Password: Please enter in a string with at least 1 character and at most 20 characters." << endl;
         getline(cin,p);
-
-        cout << user.getName() << " "  << user.getPassword() << endl;
 
         if(user.validateUsername(u) && user.validatePassword(p))
         {
@@ -519,15 +538,12 @@ int main()
     }while(flag == false);
 
 
-    // Array of areas
-    // Vector <Area> areas(NUM_AREAS);
-    // Vector  pointer
+    // Blog Initializatuion Sequence
     vector <Area> *p = new vector <Area>(NUM_AREAS);
 
-    // Initialize areas
-    initAreas(p);
+    uploadData(p);
 
-    // Welcome
+    cout << endl;
     cout << "Welcome to my Blog " << endl;
 
     string UserAction;
