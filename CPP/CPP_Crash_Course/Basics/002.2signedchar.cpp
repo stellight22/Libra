@@ -17,14 +17,14 @@ int main()
     }
     cout << endl;
 
-    cout << "signed char to unsigned int:"<< endl;
-    unsigned int fsc2;
-    for (int h = 0; h< 30; h++)
-    {
-        fsc2 = (int)sc[h];
-        cout << endl;
-        cout << fsc2;
-    }
+    cout << "char addition for char overflow example" << endl;
+    char mu = 99;
+    char g = 230;
+    char mug = mu +g;
+    cout << mug <<endl;
+    cout << (int)mug << endl;
+    cout << "CHAR_MAX = " << CHAR_MAX << endl;
+        //ascii value of I = 73, 230 + 99 = 329, 329 - CHAR MAX = 74, which is 73 +1
 
     cout << endl;
     cout << "unsigned char to int" << endl;
@@ -38,30 +38,13 @@ int main()
     }
 
     cout << endl;
-    cout << "unsigned char to unsigned int" <<endl;
-    for (int w = 0; w< 30; w++)
-    {
-        fsc2 = (int)uc[w];
-        cout << endl;
-        cout << fsc2;
-    }
-
     cout << "unsigned char [test index] =" << (int)uc[23] << endl;
 
-    cout << "char addition for char overflow example" << endl;
-    char mu = 99;
-    char g = 230;
-    char mug = mu +g;
-    cout << mug <<endl;
-    cout << (int)mug << endl;
-
-    //ascii value of I = 49, 230 + 99 = 329, 
-
-
     cout << endl;
-    cout << "the maximum value of signed char is: ";
-    cout << CHAR_MAX << endl;
+    cout << "Assign a negative number to unsigned char example" << endl;
 
+    unsigned char lm = -900;
+    cout << lm << endl; // lm = 124 ascii
     
 
 
