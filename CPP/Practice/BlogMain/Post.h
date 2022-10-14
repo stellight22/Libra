@@ -16,8 +16,11 @@ class Post
 
     public:
         // Constructor
-        Post(){ };
+        Post();
         Post(string t, string txt, string u );
+
+        // Reaction Tracking
+        int love,like,dislike,hate;
 
         // Mutator function for Title 
         void setTitle(string t);

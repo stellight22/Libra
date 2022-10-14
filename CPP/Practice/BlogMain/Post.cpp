@@ -6,11 +6,23 @@
 
 using namespace std;
 
+Post::Post()
+{
+    this->love = 0;
+    this->like = 0;
+    this->dislike =0;
+    this->hate = 0;
+}
+
 Post::Post(string t, string txt, string u )
 {
     this->Title = t; 
     this->Text = txt; 
     this->User = u;
+    this->love = 0;
+    this->like = 0;
+    this->dislike =0;
+    this->hate = 0;
 }
 
 //Mutator function for Title
@@ -57,6 +69,18 @@ ostream& operator <<(ostream &outputStream, const Post &p)
     outputStream<<"Title : "<<p.Title<<endl;
     outputStream<<"By : "<<p.User<<endl;
     outputStream<<"Text : "<<p.Text<<endl;
+    
+    if (p.love == 0 && p.like == 0 && p.dislike == 0 && p.hate == 0)
+    {
+        outputStream<< "There are no posted responses to this." << endl;
+    }
+    else
+    {
+        outputStream<<"Num Love    = "<<p.love<<endl;
+        outputStream<<"Num Like    = "<<p.like<<endl;
+        outputStream<<"Num Dislike = "<<p.dislike<<endl;
+        outputStream<<"Num Hate    = "<<p.hate<<endl;
+    }
     return outputStream;
 }
 

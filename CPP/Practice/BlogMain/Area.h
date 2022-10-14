@@ -41,6 +41,9 @@ class Area
         // Edit post function
         void EditPost(int postId, string title, string text, string user);
 
+        // Track Reaction
+        void reactionCounter(int p, int r);
+
         // Get post function
         bool getPost(int i, Post &p) const;
 

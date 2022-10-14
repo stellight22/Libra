@@ -8,12 +8,24 @@ Post Index : 0
 Title : I love programming
 By : Tom
 Text : Programming is so much fun.
+Num Love    = 0
+Num Like    = 1
+Num Dislike = 0
+Num Hate    = 0
 
 ******************
 Post Index : 1
-Title : C++ versus Python
-By : Sally
-Text : I like C++ more than Python.
+Title : test title 2
+By : B1
+Text : test text 2
+There are no posted responses to this.
+
+******************
+Post Index : 2
+Title : test title
+By : B1
+Text : test text
+There are no posted responses to this.
 
 ******************
 Area Index : 1
@@ -25,6 +37,7 @@ Post Index : 0
 Title : Picnic Saturday
 By : Sue
 Text : Join us at the park for a picnic on Saturday
+There are no posted responses to this.
 
 ******************
 Area Index : 2
@@ -36,12 +49,14 @@ Post Index : 0
 Title : Chocolate Shortage
 By : Choco-lover
 Text : Chocolate is in danger of extinction.
+There are no posted responses to this.
 
 ******************
 Post Index : 1
 Title : Paleo Diet
 By : Sushi-lover
 Text : Eat lots of fish.
+There are no posted responses to this.
 
 ******************
 Area Index : 3
@@ -53,12 +68,14 @@ Post Index : 0
 Title : COVID is OVER
 By : iloveparis
 Text : Travel without masks!
+There are no posted responses to this.
 
 ******************
 Post Index : 1
 Title : Portuguese Summer
 By : miamor
 Text : Lots of group travel deals inside.
+There are no posted responses to this.
 
 ******************
 Area Index : 4
@@ -70,11 +87,13 @@ Post Index : 0
 Title : Stayed at home
 By : Eggy
 Text : went to the park
+There are no posted responses to this.
 
 ******************
 Post Index : 1
 Title : Home
 By : Eggy
 Text : Stayed Home
+There are no posted responses to this.
 
 ******************

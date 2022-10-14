@@ -1,13 +1,13 @@
 //////////////////////////////////////////////////////
-//Class Header
+// Class Header
 //////////////////////////////////////////////////////
 /*
  * Name: Ahyeon Cho
- * Date: 10/05/2022
+ * Date: 10/12/2022
  * Section: COP3330-11
- * Assignment: Module 6 Assignment
- * Due Date: 10/05/2022
- * About this project: This project implements file IO
+ * Assignment: Module 7 Assignment
+ * Due Date: 10/12/2022
+ * About this project: This project implements enum and inheritance
  * Assumptions: Assumes correct user input
  * All work below was performed by Ahyeon Cho
  * */
@@ -20,7 +20,8 @@
 //// Friendly Overloads
 //// String Functions
 //// Menu Functions
-//// Validation Functions
+//// Blog Validation Functions
+//// User Login Functions
 //// Data Upload
 //// Data Offload
 //// User Action Functions
@@ -34,12 +35,13 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <cstdlib>
+
+using namespace std;
 
 #include "Area.h"
 #include "Post.h"
 #include "User.h"
-
-using namespace std;
 
 //////////////////////////////////////////////////////
 // Global Constants
@@ -47,6 +49,7 @@ using namespace std;
 
 // Number of Areas
 const int NUM_AREAS = 5; 
+const int NUM_USERS = 7;
 
 // Whitespace constants
 const std::string WHITESPACE = " \n\r\t\f\v";
@@ -92,6 +95,7 @@ void displayMenu()
     cout << " D - Display a post for a blog" << endl; 
     cout << " E - Edit a post for a blog" << endl;
     cout << " F - Delete a post from a blog" << endl;
+    cout << " G - Love/Like/Dislike/Hate a post" << endl;
     cout << " Q - Quit" << endl;
 }
 
@@ -147,9 +151,8 @@ void DisplayPost(vector<Area> *areas, int areaID, int postID)
     }
 }
 
-
 ////////////////////////////////////////
-// Validation Functions
+// Blog Validation Functions
 ////////////////////////////////////////
 
 // Area Index Validation
@@ -298,6 +301,95 @@ string getValidText()
     // Return valid Blog Area Index
     return text;
 }
+
+void getValidReaction(vector<Area> *areas, int areaID, int postID)
+{
+    int input;
+
+    cout << endl;
+    cout << "Select" << endl;
+    cout << "1 = Love" << endl;
+    cout << "2 = Like" << endl;
+    cout << "3 = Dislike" << endl;
+    cout << "4 = Hate" << endl;
+        
+    while ((input < 0) || (input >= 4))
+    {
+        cout << "Please enter a valid reaction" << endl;
+        cin >> input;
+    }
+
+    Post p;
+
+    bool found = areas->at(areaID).getPost(postID, p);
+
+    if (found)
+    {
+        areas->at(areaID).reactionCounter(postID,input);
+    }
+}
+
+////////////////////////////////////////
+// User Login Functions
+////////////////////////////////////////
+void loadUser(vector <User> *u)
+{
+    string userlist[7][3] = 
+    {
+        {"Bo1","B1","2222"},
+        {"Bo2","B2","2222"},
+        {"Bo3","B3","2222"},
+        {"Bo4","B4","2222"},
+        {"Bo5","B5","2222"},
+        {"Bo6","B6","2222"},
+        {"Bo7","B7","2222"}
+    };
+
+    for (int i=0 ; i < 7 ; i++)
+    {
+        u->at(i).setUsername(userlist[i][0]);
+        u->at(i).setAlias(userlist[i][1]);
+        u->at(i).setPassword(userlist[i][2]);
+    }
+
+    SuperUser s;
+    s.setUsername("BigBo");
+    s.setAlias("FavBo");
+    s.setPassword("222222");
+
+    u->push_back(s);
+}
+
+int userLogin(vector <User> *u)
+{
+    bool flag = false;
+    int j=0;
+
+    do 
+    {
+        string user;
+        string pass;
+        cout << "Login: " << endl;
+        cout << "Name: Please enter in a string with at least 1 character and at most 10 characters." << endl;
+        getline(cin,user);
+        cout << "Password: Please enter in a string with at least 1 character and at most 20 characters." << endl;
+        getline(cin,pass);
+
+        for (int i=0 ; i < u->size() ; i++)
+        {
+            if (u->at(i).validateUsername(user) && u->at(i).validatePassword(pass))
+            {
+                j=0;
+                flag = true;
+                cout << u->at(i);
+            }
+        }
+
+    }while(flag == false);
+
+    return j;
+}
+
 ////////////////////////////////////////
 // Data Upload
 ////////////////////////////////////////
@@ -396,6 +488,7 @@ void backupData(vector<Area> *areas)
 
     cout << "End of appending to file.\n";
 }
+
 ////////////////////////////////////////
 // User Action Functions
 ////////////////////////////////////////
@@ -489,6 +582,18 @@ void implementAction(vector<Area> *areas, User user, string strCh)
 
         cout << "Post Deleted." << endl;   
     }
+    else if ((strCh == "G") || (strCh == "g"))
+    {
+        cout << "Love/Like/Dislike/Hate a post" << endl;
+
+        int areaID = getValidBlogArea(areas);
+
+        int postId = getValidPostIndex(areas, areaID);
+       
+        getValidReaction(areas, areaID, postId);
+
+        cout << "Response to Post saved" << endl;   
+    }
     // If user selected Q
     else if ((strCh == "Q") || (strCh == "q"))
     {
@@ -511,32 +616,11 @@ void implementAction(vector<Area> *areas, User user, string strCh)
 
 int main() 
 {
-    // Login Sequence
-    User user;
-    bool flag = false;
+    // User Initialization Sequence
+    vector <User> *u = new vector <User>(NUM_USERS);
 
-    do 
-    {
-        string u;
-        string p;
-        cout << "Login: " << endl;
-        cout << "Name: Please enter in a string with at least 1 character and at most 10 characters." << endl;
-        getline(cin,u);
-        cout << "Password: Please enter in a string with at least 1 character and at most 20 characters." << endl;
-        getline(cin,p);
-
-        if(user.validateUsername(u) && user.validatePassword(p))
-        {
-            flag = true;
-        }
-        else
-        {
-            cout << "Incorrect Credentials" << endl;
-        }
-
-
-    }while(flag == false);
-
+    loadUser(u);
+    int i = userLogin(u);
 
     // Blog Initializatuion Sequence
     vector <Area> *p = new vector <Area>(NUM_AREAS);
@@ -546,13 +630,15 @@ int main()
     cout << endl;
     cout << "Welcome to my Blog " << endl;
 
+
+    // User Interaction Sequence
     string UserAction;
 
     // Continue until user decides to quit
     do 
     {
         promptAction(UserAction);
-        implementAction(p, user, UserAction);
+        implementAction(p, u->at(i), UserAction);
 
     } while ((UserAction != "Q") && (UserAction != "q"));
 
