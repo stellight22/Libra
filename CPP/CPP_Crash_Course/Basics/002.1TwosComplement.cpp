@@ -1,6 +1,5 @@
 #include <iostream>
-#include <string>
-#include <cmath>
+#include <cmath> // for pow()
 
 using namespace std;
 
@@ -63,22 +62,8 @@ int main()
     unsigned int *d = UintToBinary(difference);
     cout << endl;
 
+    cout << "When we perform XOR on the 2 binary numbers, we get: ";
     cout << (*a ^ *d)<< endl;
-
-
-
-
-    // cout << endl;
-    // cout << *a << endl;
-    // cout << endl;
-
-    //perform 2's complement on binary
-
-
-    cout << endl;
-
-
-
 
     return 0;
 
