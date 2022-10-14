@@ -45,7 +45,8 @@ int main()
 
     unsigned char lm = -900;
     cout << lm << endl; // lm = 124 ascii
-    
+    cout << (int)lm % UCHAR_MAX << endl;
+
 
 
     return 0;
