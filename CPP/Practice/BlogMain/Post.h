@@ -41,7 +41,7 @@ class Post
         string getUser() const;
 
         // Update Tracking
-        string updateReaction(int r);
+        void updateReaction(int r);
 
         //Will print the post information when interacted with Post class instance
         friend ostream& operator <<(ostream &outputStream, const Post &p);

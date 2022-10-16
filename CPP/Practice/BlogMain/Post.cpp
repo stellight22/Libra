@@ -62,7 +62,7 @@ string Post::getUser() const
 }
 
 // Update Tracking
-string Post::updateReaction(int r)
+void Post::updateReaction(int r)
 {
     switch(r)
     {
