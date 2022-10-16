@@ -8,10 +8,10 @@ Post Index : 0
 Title : I love programming
 By : Tom
 Text : Programming is so much fun.
-Num Love    = 0
+Num Love    = 1
 Num Like    = 1
-Num Dislike = 0
-Num Hate    = 0
+Num Dislike = 1
+Num Hate    = 1
 
 ******************
 Post Index : 1

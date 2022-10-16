@@ -6,23 +6,15 @@
 
 using namespace std;
 
-Post::Post()
-{
-    this->love = 0;
-    this->like = 0;
-    this->dislike =0;
-    this->hate = 0;
-}
+// Constructor
+Post::Post(){}
 
+// Constructor
 Post::Post(string t, string txt, string u )
 {
     this->Title = t; 
     this->Text = txt; 
     this->User = u;
-    this->love = 0;
-    this->like = 0;
-    this->dislike =0;
-    this->hate = 0;
 }
 
 //Mutator function for Title
@@ -64,21 +56,7 @@ string Post::getUser() const
 // Update Tracking
 void Post::updateReaction(int r)
 {
-    switch(r)
-    {
-        case 1:
-            this->love+=1;
-            break;
-        case 2:
-            this->like+=1;
-            break;
-        case 3:
-            this->dislike+=1;
-            break;
-        case 4:
-            this->hate+=1;
-            break;
-    }
+    this->react[r-1]+=1;
 }
 
 // Post Overloads
@@ -90,16 +68,16 @@ ostream& operator <<(ostream &outputStream, const Post &p)
     outputStream<<"By : "<<p.User<<endl;
     outputStream<<"Text : "<<p.Text<<endl;
     
-    if (p.love == 0 && p.like == 0 && p.dislike == 0 && p.hate == 0)
+    if (p.react[0] == 0 && p.react[1] == 0 && p.react[2] == 0 && p.react[3] == 0)
     {
         outputStream<< "There are no posted responses to this." << endl;
     }
     else
     {
-        outputStream<<"Num Love    = "<<p.love<<endl;
-        outputStream<<"Num Like    = "<<p.like<<endl;
-        outputStream<<"Num Dislike = "<<p.dislike<<endl;
-        outputStream<<"Num Hate    = "<<p.hate<<endl;
+        outputStream<<"Num Love    = "<<p.react[0]<<endl;
+        outputStream<<"Num Like    = "<<p.react[1]<<endl;
+        outputStream<<"Num Dislike = "<<p.react[2]<<endl;
+        outputStream<<"Num Hate    = "<<p.react[3]<<endl;
     }
     return outputStream;
 }

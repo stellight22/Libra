@@ -15,10 +15,10 @@ class Post
         string User; // User
 
         // Reaction Tracking
-        int love,like,dislike,hate;
+        int react[4]={0,0,0,0};
 
     public:
-        // Constructor
+        // Constructors
         Post();
         Post(string t, string txt, string u );
 
