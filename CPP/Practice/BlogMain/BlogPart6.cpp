@@ -313,7 +313,7 @@ void getValidReaction(vector<Area> *areas, int areaID, int postID)
     cout << "3 = Dislike" << endl;
     cout << "4 = Hate" << endl;
         
-    while ((input < 0) || (input >= 4))
+    while ((input < 0) || (input > 4))
     {
         cout << "Please enter a valid reaction" << endl;
         cin >> input;
