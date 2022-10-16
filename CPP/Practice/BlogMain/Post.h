@@ -14,13 +14,15 @@ class Post
         string Text; // Text
         string User; // User
 
+        // Reaction Tracking
+        int love,like,dislike,hate;
+
     public:
         // Constructor
         Post();
         Post(string t, string txt, string u );
 
-        // Reaction Tracking
-        int love,like,dislike,hate;
+        
 
         // Mutator function for Title 
         void setTitle(string t);

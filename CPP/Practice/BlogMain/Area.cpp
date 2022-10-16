@@ -61,21 +61,7 @@ void Area::EditPost(int postId, string title, string text, string user)
 // Track Reaction
 void Area::reactionCounter(int p, int r)
 {
-    switch(r)
-    {
-        case 1:
-            this->Posts[p].love+=1;
-            break;
-        case 2:
-            this->Posts[p].like+=1;
-            break;
-        case 3:
-            this->Posts[p].dislike+=1;
-            break;
-        case 4:
-            this->Posts[p].hate+=1;
-            break;
-    };
+    this->Posts[p].updateReaction(r);
 }
 
 // Get post function
