@@ -61,6 +61,26 @@ string Post::getUser() const
     return this->User;
 }
 
+// Update Tracking
+string Post::updateReaction(int r)
+{
+    switch(r)
+    {
+        case 1:
+            this->love+=1;
+            break;
+        case 2:
+            this->like+=1;
+            break;
+        case 3:
+            this->dislike+=1;
+            break;
+        case 4:
+            this->hate+=1;
+            break;
+    }
+}
+
 // Post Overloads
 
 //Will print the post information when interacted with Post class instance

@@ -22,8 +22,6 @@ class Post
         Post();
         Post(string t, string txt, string u );
 
-        
-
         // Mutator function for Title 
         void setTitle(string t);
 
@@ -41,6 +39,9 @@ class Post
 
         //Accessor function for user
         string getUser() const;
+
+        // Update Tracking
+        string updateReaction(int r);
 
         //Will print the post information when interacted with Post class instance
         friend ostream& operator <<(ostream &outputStream, const Post &p);
